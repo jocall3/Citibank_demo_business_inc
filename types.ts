@@ -126,6 +126,8 @@ export interface Repo {
   private: boolean;
   html_url: string;
   description: string | null;
+  // Fix: Add owner property to match GitHub API response shape
+  owner: { login: string; };
 }
 
 // --- Code Review Types ---

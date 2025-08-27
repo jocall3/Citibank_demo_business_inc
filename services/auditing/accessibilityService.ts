@@ -2,7 +2,7 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
 */
-import axe from 'axe-core';
+import * as axe from 'axe-core';
 
 // Configure axe-core to be less noisy in the console
 axe.configure({

@@ -3,7 +3,8 @@ import { FeatureDock } from './FeatureDock.tsx';
 import { Window } from './Window.tsx';
 import { Taskbar } from './Taskbar.tsx';
 import { ALL_FEATURES } from '../features/index.ts';
-import type { Feature } from '../../types.ts';
+import type { Feature, ViewType } from '../../types.ts';
+import { ActionManager } from '../ActionManager.tsx';
 
 interface WindowState {
   id: string;
@@ -15,12 +16,13 @@ interface WindowState {
 
 const Z_INDEX_BASE = 10;
 
-export const DesktopView: React.FC<{ openFeatureId?: string }> = ({ openFeatureId }) => {
+export const DesktopView: React.FC<{ openFeatureId?: string, onNavigate: (view: ViewType, props?: any) => void; }> = ({ openFeatureId, onNavigate }) => {
     const [windows, setWindows] = useState<Record<string, WindowState>>({});
     const [activeId, setActiveId] = useState<string | null>(null);
     const [nextZIndex, setNextZIndex] = useState(Z_INDEX_BASE);
     
     const openWindow = useCallback((featureId: string) => {
+        if (!featureId) return;
         const newZIndex = nextZIndex + 1;
         setNextZIndex(newZIndex);
         setActiveId(featureId);
@@ -53,8 +55,10 @@ export const DesktopView: React.FC<{ openFeatureId?: string }> = ({ openFeatureI
     useEffect(() => {
         if(openFeatureId) {
             openWindow(openFeatureId);
+            // Reset the view in global state so it doesn't re-trigger
+            onNavigate('dashboard', {});
         }
-    }, [openFeatureId, openWindow])
+    }, [openFeatureId, openWindow, onNavigate]);
 
     const closeWindow = (id: string) => {
         setWindows(prev => {
@@ -62,6 +66,9 @@ export const DesktopView: React.FC<{ openFeatureId?: string }> = ({ openFeatureI
             delete newState[id];
             return newState;
         });
+        if (activeId === id) {
+            setActiveId(null);
+        }
     };
 
     const minimizeWindow = (id: string) => {
@@ -95,7 +102,7 @@ export const DesktopView: React.FC<{ openFeatureId?: string }> = ({ openFeatureI
     const featuresMap = new Map(ALL_FEATURES.map(f => [f.id, f]));
 
     return (
-        <div className="h-full flex flex-col bg-transparent">
+        <div className="h-full flex flex-row bg-transparent w-full">
             <FeatureDock onOpen={openWindow} />
             <div className="flex-grow relative overflow-hidden">
                 {openWindows.map(win => {
@@ -114,6 +121,7 @@ export const DesktopView: React.FC<{ openFeatureId?: string }> = ({ openFeatureI
                         />
                     );
                 })}
+                <ActionManager />
             </div>
             <Taskbar
                 minimizedWindows={minimizedWindows.map(w => featuresMap.get(w.id)).filter(Boolean) as Feature[]}

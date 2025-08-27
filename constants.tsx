@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 import {
     CommandCenterIcon, CodeExplainerIcon, FeatureBuilderIcon, CodeMigratorIcon, ThemeDesignerIcon, SnippetVaultIcon,
@@ -10,7 +11,7 @@ import {
     MetaTagEditorIcon, NetworkVisualizerIcon, ResponsiveTesterIcon, SassCompilerIcon, ImageGeneratorIcon, XbrlConverterIcon,
     DigitalWhiteboardIcon, TypographyLabIcon, AiPullRequestAssistantIcon, ProjectExplorerIcon,
     ServerStackIcon, DocumentTextIcon, ChartBarIcon, EyeIcon, PaperAirplaneIcon, CloudIcon, ShieldCheckIcon, CpuChipIcon, SparklesIcon,
-    MailIcon, BugAntIcon, MagnifyingGlassIcon, RectangleGroupIcon, GcpIcon
+    MailIcon, BugAntIcon, MagnifyingGlassIcon, RectangleGroupIcon, GcpIcon, HomeIcon, PhotoIcon
 } from './components/icons.tsx';
 
 export const CHROME_VIEW_IDS = ['features-list'] as const;
@@ -65,16 +66,19 @@ export const RAW_FEATURES: RawFeature[] = [
     { id: "one-click-refactor", name: "One-Click Refactor", description: "Apply common refactoring patterns to your code with a single click.", icon: <SparklesIcon />, category: "AI Tools" },
     { id: "ai-commit-generator", name: "AI Commit Message Generator", description: "Smart, conventional commits via AI.", icon: <CommitGeneratorIcon />, category: "AI Tools" },
     { id: "prompt-craft-pad", name: "Prompt Craft Pad", description: "Save, edit, and manage your custom AI prompts with variable testing.", icon: <PromptCraftPadIcon />, category: "AI Tools" },
-    { id: "screenshot-to-component", name: "Screen Recording to Feature", description: "Turn UI screen recordings into functional multi-component code.", icon: <ScreenshotToComponentIcon />, category: "AI Tools" },
+    { id: "screenshot-to-component", name: "Screenshot to Component", description: "Turn UI screenshots into functional component code.", icon: <ScreenshotToComponentIcon />, category: "AI Tools" },
     { id: "ai-style-transfer", name: "AI Code Style Transfer", description: "Rewrite code to match a specific style guide.", icon: <StyleTransferIcon />, category: "AI Tools" },
     { id: "ai-coding-challenge", name: "AI Coding Challenge Generator", description: "Generate unique coding exercises.", icon: <CodingChallengeIcon />, category: "AI Tools" },
     { id: "code-review-bot", name: "AI Code Review Bot", description: "Get an automated code review with one-click refactoring.", icon: <CodeReviewBotIcon />, category: "AI Tools" },
     { id: "ai-pull-request-assistant", name: "AI Pull Request Assistant", description: "Generate a structured PR summary from code diffs and populate a full template.", icon: <AiPullRequestAssistantIcon />, category: "AI Tools" },
+    { id: "pr-summary-generator", name: "PR Summary Generator", description: "Generate a structured PR summary from code diffs.", icon: <AiPullRequestAssistantIcon />, category: "AI Tools" },
     { id: "audio-to-code", name: "AI Audio-to-Code", description: "Speak your programming ideas and watch them turn into code.", icon: <AudioToCodeIcon />, category: "AI Tools" },
     
     { id: "css-grid-editor", name: "CSS Grid Visual Editor", description: "Drag-based layout builder for CSS Grid.", icon: <CssGridEditorIcon />, category: "Frontend" },
     { id: "pwa-manifest-editor", name: "PWA Manifest Editor", description: "Configure and preview Progressive Web App manifests with a home screen simulator.", icon: <PwaManifestEditorIcon />, category: "Frontend" },
     { id: "typography-lab", name: "Typography Lab", description: "Preview font pairings and get CSS import rules.", icon: <TypographyLabIcon />, category: "Frontend" },
+    { id: "font-preview-picker", name: "Font Preview Picker", description: "Preview custom text with different fonts.", icon: <TypographyLabIcon />, category: "Frontend" },
+    { id: "font-pairing-tool", name: "Font Pairing Tool", description: "Experiment with different font pairings for headings and body text.", icon: <TypographyLabIcon />, category: "Frontend" },
     { id: "svg-path-editor", name: "SVG Path Editor", description: "Visually create and manipulate SVG path data with an interactive canvas.", icon: <SvgPathEditorIcon />, category: "Frontend" },
     { id: "color-palette-generator", name: "AI Color Palette Generator", description: "Pick a base color and let Gemini design a beautiful palette.", icon: <ColorPaletteGeneratorIcon />, category: "Frontend" },
     { id: "meta-tag-editor", name: "Meta Tag Editor", description: "Generate SEO/social media meta tags with a live social card preview.", icon: <MetaTagEditorIcon />, category: "Frontend" },
@@ -97,6 +101,7 @@ export const RAW_FEATURES: RawFeature[] = [
     
     { id: "portable-snippet-vault", name: "Snippet Vault", description: "Store, search, tag, and enhance reusable code snippets with AI.", icon: <SnippetVaultIcon />, category: "Productivity" },
     { id: "digital-whiteboard", name: "Digital Whiteboard", description: "Organize ideas with interactive sticky notes and get AI-powered summaries.", icon: <DigitalWhiteboardIcon />, category: "Productivity" },
+    { id: "project-moodboard", name: "Project Moodboard", description: "A visual space to gather ideas, images, and notes.", icon: <PhotoIcon />, category: "Productivity" },
     { id: "markdown-slides-generator", name: "Markdown Slides", description: "Turn markdown into a fullscreen presentation with an interactive overlay.", icon: <MarkdownSlidesIcon />, category: "Productivity" },
     { id: "weekly-digest-generator", name: "Weekly Digest Generator", description: "Generate and send a weekly project summary email via Gmail.", icon: <MailIcon />, category: "Productivity" },
     { id: "gmail-addon-simulator", name: "Gmail Add-on Simulator", description: "A simulation of how contextual add-on scopes would work inside Gmail.", icon: <MailIcon />, category: "Productivity" },

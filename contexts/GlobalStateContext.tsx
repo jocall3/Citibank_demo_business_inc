@@ -9,11 +9,13 @@ interface GlobalState {
   user: AppUser | null;
   githubUser: GitHubUser | null;
   projectFiles: FileNode | null;
-  selectedRepo: { owner: string; repo: string } | null;
+  // Fix: Expand selectedRepo to include full_name and name for consistent usage across components
+  selectedRepo: { owner: string; repo: string; full_name: string; name: string; } | null;
   vaultState: {
     isInitialized: boolean;
     isUnlocked: boolean;
   };
+  isApiKeyMissing: boolean;
 }
 
 // Action types
@@ -23,12 +25,14 @@ type Action =
   | { type: 'SET_APP_USER', payload: AppUser | null }
   | { type: 'SET_GITHUB_USER', payload: GitHubUser | null }
   | { type: 'LOAD_PROJECT_FILES'; payload: FileNode | null }
-  | { type: 'SET_SELECTED_REPO'; payload: { owner: string; repo: string } | null }
-  | { type: 'SET_VAULT_STATE'; payload: Partial<{ isInitialized: boolean, isUnlocked: boolean }> };
+  // Fix: Expand selectedRepo payload to include full_name and name
+  | { type: 'SET_SELECTED_REPO'; payload: { owner: string; repo: string; full_name: string; name: string; } | null }
+  | { type: 'SET_VAULT_STATE'; payload: Partial<{ isInitialized: boolean, isUnlocked: boolean }> }
+  | { type: 'SET_API_KEY_MISSING', payload: boolean };
 
 
 const initialState: GlobalState = {
-  activeView: 'ai-command-center',
+  activeView: 'project-explorer',
   viewProps: {},
   hiddenFeatures: [],
   user: null,
@@ -39,6 +43,7 @@ const initialState: GlobalState = {
     isInitialized: false,
     isUnlocked: false,
   },
+  isApiKeyMissing: false,
 };
 
 const reducer = (state: GlobalState, action: Action): GlobalState => {
@@ -56,11 +61,8 @@ const reducer = (state: GlobalState, action: Action): GlobalState => {
     case 'SET_APP_USER':
         if (action.payload === null) { // User logged out
             return {
-                ...state,
+                ...initialState, // Reset to initial state on logout
                 user: null,
-                githubUser: null,
-                selectedRepo: null,
-                projectFiles: null,
             }
         }
         return { ...state, user: action.payload };
@@ -81,6 +83,8 @@ const reducer = (state: GlobalState, action: Action): GlobalState => {
             ...state,
             vaultState: { ...state.vaultState, ...action.payload },
         };
+    case 'SET_API_KEY_MISSING':
+        return { ...state, isApiKeyMissing: action.payload };
     default:
       return state;
   }
@@ -138,17 +142,16 @@ export const GlobalStateProvider: React.FC<{ children: React.ReactNode }> = ({ c
                     selectedRepo: state.selectedRepo,
                     activeView: state.activeView,
                     viewProps: state.viewProps,
-                    hiddenFeatures: state.hiddenFeatures,
+                    hiddenFeatures: state.hiddenFeatures, 
                 };
                 localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(stateToSave));
             } catch (error) {
                 console.error("Failed to save state to localStorage", error);
             }
         }, 500);
-        
+
         return () => clearTimeout(handler);
     }, [state, canPersist]);
-
 
     return (
         <GlobalStateContext.Provider value={{ state, dispatch }}>

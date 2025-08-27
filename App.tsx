@@ -1,23 +1,20 @@
-
-
-
-import React, { Suspense, useCallback, useMemo, useState, useEffect } from 'react';
+import React, { Suspense, useCallback, useState, useEffect } from 'react';
 import { ErrorBoundary } from './components/ErrorBoundary.tsx';
 import { useGlobalState } from './contexts/GlobalStateContext.tsx';
 import { logEvent } from './services/telemetryService.ts';
-import { ALL_FEATURES, FEATURES_MAP } from './components/features/index.ts';
-import type { ViewType, SidebarItem, AppUser } from './types.ts';
-import { ActionManager } from './components/ActionManager.tsx';
-import { LeftSidebar } from './components/LeftSidebar.tsx';
-import { StatusBar } from './components/StatusBar.tsx';
+import type { ViewType, AppUser } from './types.ts';
 import { CommandPalette } from './components/CommandPalette.tsx';
-import { SettingsView } from './components/SettingsView.tsx';
-import { Cog6ToothIcon, HomeIcon, FolderIcon, RectangleGroupIcon } from './components/icons.tsx';
-import { AiCommandCenter } from '@/components/features/AiCommandCenter.tsx';
 import { NotificationProvider } from './contexts/NotificationContext.tsx';
 import { useTheme } from './hooks/useTheme.ts';
 import { VaultProvider } from './components/vault/VaultProvider.tsx';
 import { initGoogleAuth } from './services/googleAuthService.ts';
+import { LoginView } from './components/LoginView.tsx';
+import { DesktopView } from './components/desktop/DesktopView.tsx';
+import { isApiKeyConfigured, initializeAiClient } from './services/aiService.ts';
+import { ApiKeyPromptModal } from './components/ApiKeyPromptModal.tsx';
+import { OctokitProvider } from './contexts/OctokitContext.tsx';
+import { useVaultModal } from './contexts/VaultModalContext.tsx';
+import { isVaultInitialized } from './services/vaultService.ts';
 
 
 export const LoadingIndicator: React.FC = () => (
@@ -26,7 +23,7 @@ export const LoadingIndicator: React.FC = () => (
             <div className="w-4 h-4 rounded-full bg-primary animate-pulse" style={{ animationDelay: '0s' }}></div>
             <div className="w-4 h-4 rounded-full bg-primary animate-pulse" style={{ animationDelay: '0.2s' }}></div>
             <div className="w-4 h-4 rounded-full bg-primary animate-pulse" style={{ animationDelay: '0.4s' }}></div>
-            <span className="text-text-secondary ml-2">Loading Feature...</span>
+            <span className="text-text-secondary ml-2">Loading...</span>
         </div>
     </div>
 );
@@ -67,7 +64,7 @@ const LocalStorageConsentModal: React.FC<LocalStorageConsentModalProps> = ({ onA
 
 const AppContent: React.FC = () => {
     const { state, dispatch } = useGlobalState();
-    const { activeView, viewProps, hiddenFeatures } = state;
+    const { activeView } = state;
     const [isCommandPaletteOpen, setCommandPaletteOpen] = useState(false);
   
     useEffect(() => {
@@ -82,80 +79,88 @@ const AppContent: React.FC = () => {
     }, []);
   
     const handleViewChange = useCallback((view: ViewType, props: any = {}) => {
-      dispatch({ type: 'SET_VIEW', payload: { view, props } });
       logEvent('view_changed', { view });
+      dispatch({ type: 'SET_VIEW', payload: { view, props } });
       setCommandPaletteOpen(false);
     }, [dispatch]);
   
-    const sidebarItems: SidebarItem[] = useMemo(() => {
-        const coreFeatures = ['ai-command-center', 'project-explorer', 'workspace-connector-hub'];
-        return [
-            { id: 'ai-command-center', label: 'Command Center', icon: <HomeIcon />, view: 'ai-command-center' },
-            { id: 'project-explorer', label: 'Project Explorer', icon: <FolderIcon />, view: 'project-explorer' },
-            { id: 'workspace-connector-hub', label: 'Workspace Hub', icon: <RectangleGroupIcon />, view: 'workspace-connector-hub' },
-            ...ALL_FEATURES
-                .filter(feature => !hiddenFeatures.includes(feature.id) && !coreFeatures.includes(feature.id))
-                .map(feature => ({
-                    id: feature.id,
-                    label: feature.name,
-                    icon: feature.icon,
-                    view: feature.id as ViewType,
-                })),
-            { id: 'settings', label: 'Settings', icon: <Cog6ToothIcon />, view: 'settings' },
-        ];
-    }, [hiddenFeatures]);
-  
-    const ActiveComponent = useMemo(() => {
-        if (activeView === 'settings') return SettingsView;
-        return FEATURES_MAP.get(activeView as string)?.component ?? AiCommandCenter;
-    }, [activeView]);
-    
     return (
-        <div className="relative flex h-full w-full">
-            <LeftSidebar items={sidebarItems} activeView={state.activeView} onNavigate={handleViewChange} />
-            <div className="flex-1 flex min-w-0">
-                <div className="flex-1 flex flex-col min-w-0">
-                    <main className="relative flex-1 min-w-0 bg-surface/50 dark:bg-slate-900/50 overflow-y-auto">
-                        <ErrorBoundary>
-                            <Suspense fallback={<LoadingIndicator />}>
-                                <div key={activeView} className="fade-in w-full h-full">
-                                    <ActiveComponent {...viewProps} />
-                                </div>
-                            </Suspense>
-                        </ErrorBoundary>
-                        <ActionManager />
-                    </main>
-                    <StatusBar bgImageStatus="loaded" />
-                </div>
+        <OctokitProvider>
+            <div className="relative flex h-full w-full bg-slate-800" style={{
+                backgroundImage: 'radial-gradient(circle at top left, var(--color-primary), transparent 60%), radial-gradient(circle at bottom right, #38bdf8, transparent 50%)',
+                backgroundBlendMode: 'multiply',
+            }}>
+                <ErrorBoundary>
+                    <Suspense fallback={<LoadingIndicator />}>
+                        <DesktopView openFeatureId={activeView} onNavigate={handleViewChange} />
+                    </Suspense>
+                </ErrorBoundary>
+                <CommandPalette isOpen={isCommandPaletteOpen} onClose={() => setCommandPaletteOpen(false)} onSelect={handleViewChange} />
             </div>
-            <CommandPalette isOpen={isCommandPaletteOpen} onClose={() => setCommandPaletteOpen(false)} onSelect={handleViewChange} />
-        </div>
+        </OctokitProvider>
     )
 }
 
-
-const App: React.FC = () => {
-    const [showConsentModal, setShowConsentModal] = useState(false);
-    const { dispatch } = useGlobalState();
-    useTheme(); // Initialize theme hook
+const AppShell: React.FC = () => {
+    const [consent, setConsent] = useState<'pending' | 'granted' | 'denied'>();
+    const { state, dispatch } = useGlobalState();
+    const { user, vaultState, isApiKeyMissing } = state;
+    const { requestCreation } = useVaultModal();
+    useTheme();
 
     useEffect(() => {
       try {
-          const consent = localStorage.getItem('devcore_ls_consent');
-          if (!consent) {
-              setShowConsentModal(true);
+          const consentStatus = localStorage.getItem('devcore_ls_consent');
+          if (!consentStatus) {
+              setConsent('pending');
+          } else {
+              setConsent(consentStatus as 'granted' | 'denied');
           }
       } catch (e) {
           console.warn("Could not access localStorage.", e);
+          setConsent('denied');
       }
     }, []);
+    
+    // Onboarding flow effect
+    useEffect(() => {
+        const runOnboardingChecks = async () => {
+            if (consent !== 'granted' || !user) return;
+            
+            // Check if vault needs to be created
+            const vaultExists = await isVaultInitialized();
+            if (!vaultExists) {
+                dispatch({ type: 'SET_VAULT_STATE', payload: { isInitialized: false, isUnlocked: false } });
+                const created = await requestCreation();
+                if (created) {
+                     dispatch({ type: 'SET_VAULT_STATE', payload: { isInitialized: true, isUnlocked: true } });
+                } else {
+                    return; // Stop flow if vault creation is cancelled
+                }
+            } else {
+                 dispatch({ type: 'SET_VAULT_STATE', payload: { isInitialized: true } });
+            }
+
+            // After vault is confirmed to exist/be created, check for API key
+            const keyConfigured = await isApiKeyConfigured();
+            if (!keyConfigured) {
+                dispatch({ type: 'SET_API_KEY_MISSING', payload: true });
+            } else {
+                dispatch({ type: 'SET_API_KEY_MISSING', payload: false });
+                initializeAiClient(); // Attempt initialization
+            }
+        };
+        runOnboardingChecks();
+
+    }, [consent, user, requestCreation, dispatch]);
+
 
     useEffect(() => {
-        const handleUserChanged = (user: AppUser | null) => {
-            dispatch({ type: 'SET_APP_USER', payload: user });
+        const handleUserChanged = (appUser: AppUser | null) => {
+            dispatch({ type: 'SET_APP_USER', payload: appUser });
         };
 
-        const init = () => {
+        const initAuth = () => {
             if (window.google) {
                 initGoogleAuth(handleUserChanged);
             }
@@ -163,20 +168,20 @@ const App: React.FC = () => {
 
         const gsiScript = document.getElementById('gsi-client');
         if (window.google) {
-            init();
+            initAuth();
         } else if (gsiScript) {
-            gsiScript.addEventListener('load', init);
-            return () => gsiScript.removeEventListener('load', init);
+            gsiScript.addEventListener('load', initAuth);
+            return () => gsiScript.removeEventListener('load', initAuth);
         }
     }, [dispatch]);
   
     const handleAcceptConsent = () => {
       try {
           localStorage.setItem('devcore_ls_consent', 'granted');
-          window.location.reload();
+          window.location.reload(); // Reload to re-evaluate storage access
       } catch (e) {
           console.error("Could not write to localStorage.", e);
-          setShowConsentModal(false);
+          setConsent('denied');
       }
     };
   
@@ -186,15 +191,44 @@ const App: React.FC = () => {
       } catch (e) {
           console.error("Could not write to localStorage.", e);
       }
-      setShowConsentModal(false);
+      setConsent('denied');
+    };
+    
+    const renderContent = () => {
+        if (consent === 'pending') {
+            return <LocalStorageConsentModal onAccept={handleAcceptConsent} onDecline={handleDeclineConsent} />;
+        }
+        if (consent === 'denied') {
+            return <div className="w-full h-full flex items-center justify-center p-8 text-center">Local storage access is required for this application to function. Please reload and accept the prompt.</div>
+        }
+        if (!user) {
+            return <LoginView />;
+        }
+        if (!vaultState.isInitialized || !vaultState.isUnlocked) {
+             // The VaultProvider modals will handle prompting for creation/unlock
+             return <LoadingIndicator />;
+        }
+        if (isApiKeyMissing) {
+            return <ApiKeyPromptModal />;
+        }
+         // Only show main app if user is logged in, vault is handled, and key is present.
+        if (user && vaultState.isUnlocked && !isApiKeyMissing) {
+            return <AppContent />;
+        }
+        // Default to a loading state while checks are running
+        return <LoadingIndicator />;
     };
 
+    return renderContent();
+};
+
+
+const App: React.FC = () => {
     return (
         <div className="h-screen w-screen font-sans overflow-hidden bg-background">
             <NotificationProvider>
                 <VaultProvider>
-                    {showConsentModal && <LocalStorageConsentModal onAccept={handleAcceptConsent} onDecline={handleDeclineConsent} />}
-                    <AppContent />
+                    <AppShell />
                 </VaultProvider>
             </NotificationProvider>
         </div>

@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect, useMemo, useRef } from 'react'
 import mermaid from 'mermaid';
 import { explainCodeStructured, generateMermaidJs } from '../../services/index.ts';
 import type { StructuredExplanation } from '../../types.ts';
+import { useTheme } from '../../hooks/useTheme.ts';
 import { CpuChipIcon } from '../icons.tsx';
 import { MarkdownRenderer, LoadingSpinner } from '../shared/index.tsx';
 
@@ -31,7 +32,7 @@ const simpleSyntaxHighlight = (code: string) => {
         .replace(/(\{|\}|\(|\)|\[|\])/g, '<span class="text-gray-400">$1</span>');
 };
 
-mermaid.initialize({ startOnLoad: false, theme: 'neutral', securityLevel: 'loose' });
+mermaid.initialize({ startOnLoad: false, securityLevel: 'loose' });
 
 export const AiCodeExplainer: React.FC<{ initialCode?: string }> = ({ initialCode }) => {
     const [code, setCode] = useState<string>(initialCode || exampleCode);
@@ -40,6 +41,7 @@ export const AiCodeExplainer: React.FC<{ initialCode?: string }> = ({ initialCod
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [error, setError] = useState<string>('');
     const [activeTab, setActiveTab] = useState<ExplanationTab>('summary');
+    const [themeState] = useTheme();
     const textareaRef = useRef<HTMLTextAreaElement>(null);
     const preRef = useRef<HTMLPreElement>(null);
     const mermaidContainerRef = useRef<HTMLDivElement>(null);
@@ -81,6 +83,7 @@ export const AiCodeExplainer: React.FC<{ initialCode?: string }> = ({ initialCod
         const renderMermaid = async () => {
              if (activeTab === 'flowchart' && mermaidCode && mermaidContainerRef.current) {
                 try {
+                    mermaid.initialize({ startOnLoad: false, theme: themeState.mode === 'dark' ? 'dark' : 'neutral', securityLevel: 'loose' });
                     mermaidContainerRef.current.innerHTML = ''; // Clear previous
                     const { svg } = await mermaid.render(`mermaid-graph-${Date.now()}`, mermaidCode);
                     mermaidContainerRef.current.innerHTML = svg;
@@ -91,7 +94,7 @@ export const AiCodeExplainer: React.FC<{ initialCode?: string }> = ({ initialCod
             }
         }
         renderMermaid();
-    }, [activeTab, mermaidCode]);
+    }, [activeTab, mermaidCode, themeState.mode]);
 
 
     const handleScroll = () => {
