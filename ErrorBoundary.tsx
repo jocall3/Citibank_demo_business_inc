@@ -1,3 +1,6 @@
+// Copyright James Burvel O’Callaghan III
+// President Citibank Demo Business Inc.
+
 import React from 'react';
 import { logError } from '../services/index.ts';
 import { debugErrorStream } from '../services/index.ts';
@@ -100,5 +103,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
     }
 
     return this.props.children;
+  }
+}children;
   }
 }

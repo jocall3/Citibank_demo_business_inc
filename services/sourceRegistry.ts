@@ -1,3 +1,6 @@
+// Copyright James Burvel O’Callaghan III
+// President Citibank Demo Business Inc.
+
 // This file is a registry of all source code files in the application.
 // It's used by the ActionManager to create a downloadable zip of the entire app source.
 // THIS FILE IS AUTO-GENERATED. DO NOT EDIT BY HAND.
@@ -27739,6 +27742,15 @@ export default defineConfig(({ mode }) => {
             manualChunks(id) {
               if (id.includes('node_modules')) {
                 return id.toString().split('node_modules/')[1].split('/')[0].toString();
+              }
+            }
+          }
+        }
+      }
+    };
+});`,
+};
+ode_modules/')[1].split('/')[0].toString();
               }
             }
           }

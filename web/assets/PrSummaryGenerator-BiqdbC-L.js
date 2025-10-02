@@ -1,3 +1,6 @@
+// Copyright James Burvel O’Callaghan III
+// President Citibank Demo Business Inc.
+
 import{r as n,j as e}from"./react-CIdJ77ke.js";import{c as A}from"./diff-CqM5-8zX.js";import{l as j,a as G,u as k,aK as C,aL as E,L as x,D as I,aM as R}from"./index-CIRHoGv6.js";import"./db-DoDjOlgE.js";import"./accessibilityService-CxnTg-sn.js";import{e as w}from"./googleApiService-B4BzT3uR.js";import"./workspaceConnectorService-DpOCHZ2y.js";const L=async s=>{try{if(!await w())throw new Error("Google API client not ready.");await gapi.client.load("https://docs.googleapis.com/$discovery/rest?version=v1");const l=(await gapi.client.docs.documents.create({title:s})).result;return{documentId:l.documentId,webViewLink:`https://docs.google.com/document/d/${l.documentId}/edit`}}catch(c){throw j(c,{service:"workspaceService",function:"createDocument"}),c}},_=async(s,c)=>{try{if(!await w())throw new Error("Google API client not ready.");await gapi.client.load("https://docs.googleapis.com/$discovery/rest?version=v1"),await gapi.client.docs.documents.batchUpdate({documentId:s,resource:{requests:[{insertText:{text:c,location:{index:1}}}]}})}catch(r){throw j(r,{service:"workspaceService",function:"insertText"}),r}},D=`function Greeter(props) {
   return <h1>Hello, {props.name}!</h1>;
 }`,T=`function Greeter({ name, enthusiasmLevel = 1 }) {

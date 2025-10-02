@@ -1,1 +1,4 @@
+// Copyright James Burvel O’Callaghan III
+// President Citibank Demo Business Inc.
+
 {"version":3,"file":"universal-user-agent-CLgqIJsR.js","sources":["../../node_modules/universal-user-agent/index.js"],"sourcesContent":["export function getUserAgent() {\n  if (typeof navigator === \"object\" && \"userAgent\" in navigator) {\n    return navigator.userAgent;\n  }\n\n  if (typeof process === \"object\" && process.version !== undefined) {\n    return `Node.js/${process.version.substr(1)} (${process.platform}; ${\n      process.arch\n    })`;\n  }\n\n  return \"<environment undetectable>\";\n}\n"],"names":["getUserAgent"],"mappings":"AAAO,SAASA,GAAe,CAC7B,OAAI,OAAO,WAAc,UAAY,cAAe,UAC3C,UAAU,UAGf,OAAO,SAAY,UAAY,QAAQ,UAAY,OAC9C,WAAW,QAAQ,QAAQ,OAAO,CAAC,CAAC,KAAK,QAAQ,QAAQ,KAC9D,QAAQ,IACd,IAGS,4BACT","x_google_ignoreList":[0]}

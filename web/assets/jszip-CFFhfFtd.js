@@ -1,3 +1,6 @@
+// Copyright James Burvel O’Callaghan III
+// President Citibank Demo Business Inc.
+
 import{c as bt,g as It}from"./@braintree-DzxiOROe.js";import{c as vt}from"./elkjs-oKFFZvz7.js";var wt={exports:{}};/*!
 
 JSZip v3.10.1 - A JavaScript class for generating and reading zip files

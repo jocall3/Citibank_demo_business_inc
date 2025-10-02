@@ -1,3 +1,6 @@
+// Copyright James Burvel O’Callaghan III
+// President Citibank Demo Business Inc.
+
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import type { Octokit } from 'octokit';
 import { initializeOctokit } from '../services/authService.ts';

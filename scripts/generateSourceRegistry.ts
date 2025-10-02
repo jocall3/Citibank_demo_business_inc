@@ -1,3 +1,6 @@
+// Copyright James Burvel O’Callaghan III
+// President Citibank Demo Business Inc.
+
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
