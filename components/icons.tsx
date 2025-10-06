@@ -1,7 +1,34 @@
-// Copyright James Burvel O’Callaghan III
+// Copyright James Burvel Oâ€™Callaghan III
 // President Citibank Demo Business Inc.
-
-
+//
+// This file, `components/icons.tsx`, serves as the central repository for all graphical icons
+// used across the entire Citibank Demo Business Inc. Quantum Nexus Platform (QNP).
+// It's engineered to be a comprehensive, commercial-grade icon utility, supporting
+// an expansive ecosystem of features, integrations, and AI-driven capabilities.
+//
+// Our vision for QNP is to provide an unparalleled developer and business experience,
+// enabling rapid innovation through a rich, intuitive visual language. This file
+// embodies that commitment, providing a robust, scalable, and meticulously curated
+// collection of icons.
+//
+// Architecture Philosophy:
+// 1.  **Modularity & Reusability**: Icons are encapsulated within `IconWrapper` components,
+//     ensuring consistent sizing and styling. This promotes ease of use and maintenance.
+// 2.  **Scalability**: Designed to accommodate hundreds, if not thousands, of unique icons
+//     without compromising performance or developer experience. New icons are added
+//     following a clear naming convention and category structure.
+// 3.  **AI-Native Integration**: Special emphasis is placed on icons representing AI/ML
+//     features, including deep integrations with large language models like Google Gemini
+//     and OpenAI ChatGPT, reflecting QNP's AI-first strategy.
+// 4.  **Cloud-Agnostic & Multi-Service Support**: A vast array of external services,
+//     spanning multiple cloud providers (AWS, Azure, GCP, etc.), DevOps tools, databases,
+//     and SaaS platforms, are represented to visualize QNP's extensive integration capabilities.
+// 5.  **Future-Proofing**: The component structure anticipates future growth, including
+//     emerging technologies like Quantum Computing, Web3, and advanced IoT.
+//
+// Each icon below tells a part of the QNP story, representing a distinct feature or service
+// meticulously crafted for our users. This is not just an icon file; it's a manifest of
+// the QNP's functional breadth and technological ambition.
 
 import React from 'react';
 
@@ -9,7 +36,8 @@ const IconWrapper: React.FC<{children: React.ReactNode; className?: string}> = (
     <div className={className ?? 'w-6 h-6'}>{children}</div>
 );
 
-// --- From InterfaceIcons.tsx ---
+// --- From InterfaceIcons.tsx (Existing Core Interface Icons) ---
+// These are fundamental icons providing basic UI/UX functionality and standard interaction points.
 export const CpuChipIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M8.25 21v-1.5M4.5 15.75H3m18 0h-1.5M21 8.25v7.5A2.25 2.25 0 0 1 18.75 18H5.25A2.25 2.25 0 0 1 3 15.75v-7.5A2.25 2.25 0 0 1 5.25 6h13.5A2.25 2.25 0 0 1 21 8.25ZM12 18V6" /></svg></IconWrapper>;
 export const DocumentIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg></IconWrapper>;
 export const FolderIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z" /></svg></IconWrapper>;
@@ -34,7 +62,8 @@ export const MinimizeIcon: React.FC = () => <WindowIconWrapper><svg xmlns="http:
 export const MaximizeIcon: React.FC = () => <WindowIconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 4.5h15v15h-15z" /></svg></WindowIconWrapper>;
 export const RestoreIcon: React.FC = () => <WindowIconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M8.5 8.5h11v11h-11z M4.5 4.5h11v11h-11z" /></svg></WindowIconWrapper>;
 
-// --- From FeatureIcons.tsx ---
+// --- From FeatureIcons.tsx (Existing Feature-Specific Icons) ---
+// These icons represent common functionalities expected in a robust software application.
 export const FileCodeIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" /></svg></IconWrapper>;
 export const GitBranchIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M6 3v4a3 3 0 0 0 3 3h4a3 3 0 0 0 3-3V3M6 21v-4a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v4M12 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" /></svg></IconWrapper>;
 export const SparklesIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" /></svg></IconWrapper>;
@@ -64,7 +93,8 @@ export const MicrophoneIcon: React.FC = () => <IconWrapper><svg xmlns="http://ww
 export const MailIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg></IconWrapper>;
 
 
-// --- From CustomFeatureIcons.tsx ---
+// --- From CustomFeatureIcons.tsx (Existing Custom Features - AI/Developer Focus) ---
+// These custom icons already illustrate QNP's lean towards advanced development tooling and AI.
 export const CommandCenterIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M10 9V5l-7 7 7 7v-4.5" strokeLinecap="round" strokeLinejoin="round"/><path d="M14 14.5V19l7-7-7-7v4.5" strokeLinecap="round" strokeLinejoin="round"/><circle cx="12" cy="12" r="3" fill="currentColor" opacity="0.4"/></svg></IconWrapper>;
 export const ProjectExplorerIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9.75h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" /></svg></IconWrapper>;
 export const ConnectionsIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" /></svg></IconWrapper>;
@@ -110,3 +140,227 @@ export const ImageGeneratorIcon: React.FC = () => <IconWrapper><svg viewBox="0 0
 export const GithubIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clipRule="evenodd" /></svg></IconWrapper>;
 export const HuggingFaceIcon: React.FC = () => <IconWrapper><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.25,4.01A2.25,2.25,0,0,0,18,1.76H6A2.25,2.25,0,0,0,3.75,4.01V15.5A2.25,2.25,0,0,0,6,17.75H8.6l3.4,3.4,3.4-3.4H18a2.25,2.25,0,0,0,2.25-2.25V4.01ZM8.5,12.06a1,1,0,0,1,1,1,1,1,0,0,1-2,0,1,1,0,0,1,1-1Zm4.9,0a1,1,0,0,1,1,1,1,1,0,0,1-2,0,1,1,0,0,1,1-1Zm2.6,3.44a3.25,3.25,0,0,1-6,0,.75.75,0,0,1,1.5,0,1.75,1.75,0,0,0,3,0,.75.75,0,0,1,1.5,0Z"/></svg></IconWrapper>;
 export const GcpIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z" fill="#4285F4" stroke="none"/><path d="M2 12l10 5 10-5-10-5-10 5z" fill="#34A853" stroke="none" opacity="0.7"/><path d="M12 22L2 17l10-5 10 5-10 5z" fill="#FBBC05" stroke="none" opacity="0.7"/></svg></IconWrapper>;
+
+// --- Section 1: AI/ML Core Features (Gemini & ChatGPT Integration) ---
+// This section introduces icons representing the deep integration of leading AI models
+// like Google Gemini and OpenAI ChatGPT into the QNP platform. These features empower
+// users with advanced natural language processing, code generation, content creation,
+// and intelligent assistance directly within their workflows.
+export const GeminiIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2z"/><path d="M8 12a4 4 0 108 0 4 4 0 00-8 0z" fill="currentColor" opacity="0.7"/><path d="M12 4v4m0 8v4M4 12h4m8 0h4"/></svg></IconWrapper>;
+export const ChatGPTIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><circle cx="12" cy="10" r="1.5" fill="currentColor" opacity="0.7"/><circle cx="8" cy="10" r="1.5" fill="currentColor" opacity="0.7"/><circle cx="16" cy="10" r="1.5" fill="currentColor" opacity="0.7"/></svg></IconWrapper>;
+export const AiAssistantIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8 10l2 2 4-4"/></svg></IconWrapper>; // A shield with a checkmark - representing intelligent guardian.
+export const NlpIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 12h8m-8 4h8m-4-8V4m0 16v-4m4-4V4m0 16v-4"/><path d="M16 12h4"/></svg></IconWrapper>; // Lines representing text processing.
+export const CodeGenIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M16 18l4-4-4-4M8 6l-4 4 4 4"/><path d="M12 3v18"/></svg></IconWrapper>; // Arrows indicating input/output of code.
+export const SummaryIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M8 12h8m-8 4h6"/></svg></IconWrapper>; // Document with truncated lines.
+export const SentimentIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01M15 9h.01"/></svg></IconWrapper>; // Smiley face for sentiment.
+export const RecommendationIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M8 14h8m-4-4v8m0-8l-3 3m3-3l3 3"/></svg></IconWrapper>; // Star/up arrow for recommendation.
+export const VisionAiIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/><path d="M18 6L6 18"/></svg></IconWrapper>; // Eye with a target.
+export const SpeechAiIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><path d="M12 19v4"/></svg></IconWrapper>; // Microphone.
+export const ChatbotIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><path d="M8 9h8m-8 4h6"/></svg></IconWrapper>; // Chat bubble with text lines.
+export const PromptEngineeringIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/><path d="M12 17.5V14"/></svg></IconWrapper>; // Stacked rhombuses for layered prompts.
+export const ModelTrainingIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="4"/><path d="M19.5 7.5L12 12l7.5 4.5V7.5zM4.5 7.5V16.5L12 12 4.5 7.5z"/></svg></IconWrapper>; // A neural network node with data flow.
+export const ModelDeploymentIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8 10l2 2 4-4"/><path d="M12 18V6"/></svg></IconWrapper>; // AI shield being deployed to cloud.
+export const AiEthicsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8m0-8h.01"/></svg></IconWrapper>; // AI shield with balance scales.
+export const VectorDatabaseIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 12H2m10-8v16m-6-8h12M4 8h16M4 16h16"/></svg></IconWrapper>; // Stack of circles/data points with interconnected lines.
+
+// --- Section 2: Cloud & Infrastructure Icons (External Services) ---
+// QNP offers deep integration with major cloud providers and fundamental infrastructure services.
+// These icons represent the diverse range of cloud resources that can be managed, monitored,
+// and deployed directly from the platform.
+export const AwsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a5 5 0 00-5 5c0 1.66 1.34 3 3 3h4c1.66 0 3-1.34 3-3a5 5 0 00-5-5z"/><path d="M20 17H4c-1.1 0-2 .9-2 2v2h20v-2c0-1.1-.9-2-2-2z"/></svg></IconWrapper>; // Abstract cloud with server base.
+export const AzureIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 18l10 4 10-4-10-4-10 4z"/><path d="M2 12l10 4 10-4"/><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg></IconWrapper>; // Hexagonal data structure for Azure.
+export const GoogleCloudIcon: React.FC = () => GcpIcon(); // Reusing the existing GCP icon for Google Cloud.
+export const KubernetesIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M18 6l-6 6-6-6"/><path d="M18 18l-6-6-6 6"/><path d="M12 2v20"/><path d="M2 12h20"/></svg></IconWrapper>; // K8s star/cross pattern.
+export const DockerIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="7" width="20" height="12" rx="2" ry="2"/><path d="M6 10v-.5m4 0v.5m4-.5v.5m4-.5v.5"/></svg></IconWrapper>; // Container shape.
+export const LambdaIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M5 12l7-7 7 7-7 7-7-7z"/><path d="M12 5v14"/></svg></IconWrapper>; // Function symbol (lambda).
+export const EC2Icon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8" cy="8" r="1.5"/><circle cx="16" cy="8" r="1.5"/><circle cx="8" cy="16" r="1.5"/><circle cx="16" cy="16" r="1.5"/></svg></IconWrapper>; // Grid of compute instances.
+export const S3Icon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M20 8H4a2 2 0 00-2 2v4a2 2 0 002 2h16a2 2 0 002-2v-4a2 2 0 00-2-2z"/><path d="M7 10v4M12 10v4M17 10v4"/></svg></IconWrapper>; // Stacked boxes for storage.
+export const VmIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><path d="M8 8h8v8H8z"/></svg></IconWrapper>; // Virtual Machine.
+export const FirewallIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M12 3v18M3 12h18"/></svg></IconWrapper>; // Grid with blockages.
+export const LoadBalancerIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L6 7h12L12 2z"/><path d="M4 12h16M4 18h16"/><path d="M6 12v6M18 12v6"/></svg></IconWrapper>; // Balanced scale or two servers.
+export const CDNIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 2v20m-5-5h10M7 7h10"/></svg></IconWrapper>; // Globe with points.
+
+// --- Section 3: DevOps & CI/CD Icons (External Services) ---
+// QNP streamlines development and operations with integrated CI/CD pipelines,
+// monitoring, and version control. These icons represent essential DevOps tools.
+export const JenkinsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8 10l2 2 4-4"/></svg></IconWrapper>; // Jenkins butler. (Abstracted to shield w/ check)
+export const GitLabIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21.25 10.75L12 2 2.75 10.75h18.5z"/><path d="M12 22L21.25 10.75H2.75L12 22z"/></svg></IconWrapper>; // Abstract GitLab fox.
+export const GitHubActionsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22a10 10 0 100-20 10 10 0 000 20z"/><path d="M8 12h8m-4-4v8"/></svg></IconWrapper>; // Gear/play button.
+export const CircleCIIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4" fill="currentColor" opacity="0.7"/></svg></IconWrapper>; // Circle in a circle.
+export const TravisCIIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></IconWrapper>; // Hexagonal structure.
+export const PrometheusIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></IconWrapper>; // Clock for monitoring.
+export const GrafanaIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 12h18m-9-9v18m-6-6v6m12-6v6"/></svg></IconWrapper>; // Graph bars.
+export const SentryIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22a10 10 0 100-20 10 10 0 000 20z"/><path d="M12 18V6m-3 3l3-3 3 3"/></svg></IconWrapper>; // Lighthouse/alert.
+export const DataDogIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M7 7h10v10H7z"/><path d="M12 2l-5 5h10l-5-5zM12 22l-5-5h10l-5 5z"/></svg></IconWrapper>; // Stylized dog face.
+export const ELKStackIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 6h16v12H4z"/><path d="M8 9v6m8-6v6m-4-6v6"/></svg></IconWrapper>; // Stacked documents.
+
+// --- Section 4: Database & Data Management Icons (External Services) ---
+// QNP provides robust data management capabilities, integrating with various
+// database systems and data processing tools to handle diverse data needs.
+export const PostgreSQLIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0018 0V5"/><path d="M12 12v7"/></svg></IconWrapper>; // Cylinder database.
+export const MongoDBIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 000 20z" opacity="0.7"/></svg></IconWrapper>; // Sphere with 'M' like lines.
+export const RedisIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M12 6v12m-6-6h12"/></svg></IconWrapper>; // Key-value store.
+export const KafkaIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12H3m18 0L17 8m4 4L17 16"/><path d="M3 12L7 8m-4 4L7 16"/></svg></IconWrapper>; // Arrow for streaming.
+export const DynamoDBIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></IconWrapper>; // Stacked rhombuses.
+export const CassandraIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 2v20m-5-5l10-10m-10 10l10-10"/></svg></IconWrapper>; // Intersecting circles.
+export const DataLakeIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M4 19h16v-6H4zM4 13l8-8 8 8"/></svg></IconWrapper>; // Large data reservoir.
+export const DataWarehouseIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M6 9h12M6 15h12"/></svg></IconWrapper>; // Structured data storage.
+export const DataStreamIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 12h18m-9-9v18m-6-6l6 6 6-6"/></svg></IconWrapper>; // Flowing data.
+export const ETLIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 6h6m6 0h6M12 3v18m0-18l-3 3m3-3l3 3m-3 18l-3-3m3 3l3-3"/></svg></IconWrapper>; // Extract Transform Load arrows.
+
+// --- Section 5: API & Integration Icons (External Services) ---
+// QNP offers extensive API management and integration capabilities, allowing seamless
+// connectivity with various internal and external systems.
+export const ApiGatewayIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M6 12h12m-6-6v12"/></svg></IconWrapper>; // Gate with arrow.
+export const WebhookIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M18 6L6 18"/><path d="M6 6l12 12"/><circle cx="6" cy="6" r="2" fill="currentColor" opacity="0.7"/><circle cx="18" cy="18" r="2" fill="currentColor" opacity="0.7"/></svg></IconWrapper>; // Two connected circles with zig-zag.
+export const GraphQLIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M5.82 5.82l12.36 12.36M5.82 18.18L18.18 5.82"/></svg></IconWrapper>; // Interconnected circles for graph query.
+export const RestApiIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 7h10m-10 4h10m-10 4h7"/></svg></IconWrapper>; // Document with API method lines.
+export const WebSocketsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M8 12h8m-4-4v8"/></svg></IconWrapper>; // Two-way arrow in a circle.
+export const PubSubIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12H3m18 0L17 8m4 4L17 16"/><path d="M3 12L7 8m-4 4L7 16"/><circle cx="12" cy="12" r="2" fill="currentColor" opacity="0.7"/></svg></IconWrapper>; // Central node with arrows.
+export const SqsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="8" width="18" height="8" rx="2" ry="2"/><path d="M6 12h12"/></svg></IconWrapper>; // Queue representation.
+export const SnsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12H3m9-9v18m-6-6L12 18l6-6"/></svg></IconWrapper>; // Broadcast signal.
+export const EventBusIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 12h18m-9-9v18m-6-6l6 6 6-6"/><path d="M9 6h6"/></svg></IconWrapper>; // Central line with connecting points.
+export const MessageQueueIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="8" width="18" height="8" rx="2" ry="2"/><path d="M6 12h12M9 12h6"/></svg></IconWrapper>; // Queue with messages.
+
+// --- Section 6: Security & Compliance Icons (External Services) ---
+// Security and compliance are paramount. QNP provides tools and integrations
+// to ensure data integrity, access control, and regulatory adherence.
+export const OAuthIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l5-5m-5 5l-5-5"/></svg></IconWrapper>; // Key unlocking access.
+export const JwsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 7h10m-10 4h10m-10 4h7"/></svg></IconWrapper>; // Signed document.
+export const MfaIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v8m-3 0h6"/></svg></IconWrapper>; // Shield with two checks.
+export const SsoIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v8m-4-4h8"/></svg></IconWrapper>; // Single sign-on keyhole.
+export const EncryptionIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M16.5 10.5V6.75a4.5 4.5 0 00-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25Z"/><path d="M12 14v4"/></svg></IconWrapper>; // Lock with key.
+export const ComplianceIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8 10l2 2 4-4"/></svg></IconWrapper>; // Shield with a checkmark.
+export const ThreatDetectionIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 8v4m0 4h.01"/></svg></IconWrapper>; // Exclamation in a circle.
+export const VulnerabilityScanIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 18v-6m0-4v-2m-4 8l8-8"/></svg></IconWrapper>; // Magnifying glass on a broken shield.
+export const AuditLogIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 7h10m-10 4h10m-10 4h7"/><path d="M12 3v18"/></svg></IconWrapper>; // Document with timestamp lines.
+
+// --- Section 7: Front-end & UI/UX Icons (Custom Tools) ---
+// QNP empowers front-end developers and designers with specialized tools for
+// building responsive, accessible, and visually stunning user interfaces.
+export const ComponentLibraryIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M10 12h4m0-4v4m0 4v-4"/></svg></IconWrapper>; // Grid of components.
+export const FigmaIntegrationIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/><circle cx="12" cy="12" r="3" fill="currentColor" opacity="0.4"/></svg></IconWrapper>; // Figma-like shapes.
+export const StorybookIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12H3m9-9v18m6-6l-6 6-6-6"/></svg></IconWrapper>; // Book with open pages.
+export const AccessibilityIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="6" r="4"/><path d="M10 12v6m4-6v6m-4 0h-2c-1.1 0-2 .9-2 2v2m8-4h2c1.1 0 2 .9 2 2v2"/></svg></IconWrapper>; // Person figure for accessibility.
+export const LocalizationIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 000 20z"/><path d="M22 12c-2.76 0-5.3-.89-7.35-2.42M12 22c2.76 0 5.3-.89 7.35-2.42"/></svg></IconWrapper>; // Globe with language translation.
+export const UIUXAnalyticsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625Zm6.75-5.25c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V3.375Z"/><circle cx="12" cy="12" r="3"/></svg></IconWrapper>; // Chart with a user.
+
+// --- Section 8: Business & Analytics Icons (Enterprise Features) ---
+// QNP goes beyond development, offering integrated business intelligence,
+// financial tools, and workflow automation to drive enterprise efficiency.
+export const FinancialAnalyticsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625Zm6.75-5.25c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V3.375Z"/><path d="M8 12h8m-4-4v8"/></svg></IconWrapper>; // Bar chart with dollar sign.
+export const CrmIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 7h10M7 11h10M7 15h7"/></svg></IconWrapper>; // Contact card.
+export const ErpIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M6 8h12M6 12h12M6 16h12"/></svg></IconWrapper>; // Enterprise Resource Planning blocks.
+export const WorkflowAutomationIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L6 7h12L12 2z"/><path d="M12 22L6 17h12L12 22z"/><path d="M22 12H2"/></svg></IconWrapper>; // Flowing arrows.
+export const SupplyChainIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 12h18m-9-9v18m-6-6L12 18l6-6"/><rect x="5" y="5" width="4" height="4"/><rect x="15" y="5" width="4" height="4"/><rect x="5" y="15" width="4" height="4"/><rect x="15" y="15" width="4" height="4"/></svg></IconWrapper>; // Interconnected boxes.
+export const HREmploymentIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="7" r="4"/><path d="M17.94 17A7 7 0 0012 14c-2 0-3.92.77-5.36 2.14A7 7 0 004 20h16c-1.38-2.61-3.66-4.52-6.06-5.94z"/></svg></IconWrapper>; // User group.
+export const LegalDocumentIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6m-6 4h4"/></svg></IconWrapper>; // Document with legal scales.
+export const CustomerSupportIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><circle cx="12" cy="10" r="1.5"/><path d="M8 9h8m-4 4v2"/></svg></IconWrapper>; // Chat bubble with headphone.
+export const SalesReportingIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625Zm6.75-5.25c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V3.375Z"/><path d="M8 12h8m-4-4v8"/><circle cx="12" cy="12" r="3" stroke="none" fill="currentColor" opacity="0.3"/></svg></IconWrapper>; // Bar chart with an upward arrow.
+
+// --- Section 9: Emerging Technologies Icons ---
+// QNP is forward-looking, integrating capabilities for cutting-edge technologies.
+export const BlockchainIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="10" width="4" height="4"/><rect x="10" y="10" width="4" height="4"/><rect x="17" y="10" width="4" height="4"/><path d="M7 12h3m4 0h3"/></svg></IconWrapper>; // Interconnected blocks.
+export const Web3Icon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 2v20m-5-5h10M7 7h10"/></svg></IconWrapper>; // Decentralized web globe.
+export const NftIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 7h10v10H7z"/></svg></IconWrapper>; // Unique digital asset frame.
+export const SmartContractIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 7h10m-10 4h10m-10 4h7"/><path d="M12 3v18"/></svg></IconWrapper>; // Code document with contract lines.
+export const IotIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="3"/><path d="M18 12l-6-6M12 18l6-6M6 12l6 6M12 6l-6 6"/></svg></IconWrapper>; // Connected devices.
+export const EdgeComputingIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/><path d="M12 17.5V14"/></svg></IconWrapper>; // Hexagon with small dots at edges.
+export const QuantumComputingIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M8 12h8m-4-4v8"/></svg></IconWrapper>; // Qubit entanglement.
+export const ArVrIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/><path d="M22 12l-4-4m4 4l-4 4"/></svg></IconWrapper>; // VR headset with augmented reality overlays.
+export const WebAssemblyIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 7h10m-10 4h10m-10 4h7"/><path d="M12 3v18"/></svg></IconWrapper>; // Code block with binary feel.
+
+// --- Section 10: Internal Platform Specific & Generic Enhancements ---
+// These icons represent specific features unique to the QNP platform, or provide
+// generic representations for common development patterns not covered elsewhere.
+// This section demonstrates the flexibility of the icon system to expand to
+// hundreds of internal feature representations.
+export const DataPipelineIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 6h18m-9-3v18m-6-6l6 6 6-6"/></svg></IconWrapper>; // Flowing data pipe.
+export const MicroserviceIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></IconWrapper>; // Small independent boxes.
+export const EventDrivenIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 2v10l5-5"/></svg></IconWrapper>; // Central event with outward flow.
+export const DomainDrivenIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M12 3v18M3 12h18"/></svg></IconWrapper>; // Bounded context icon.
+export const FeatureFlagIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 3v18h8a2 2 0 002-2V5a2 2 0 00-2-2H3zM12 9h9m-9 4h6m-6 4h3"/></svg></IconWrapper>; // Flag with toggle.
+export const ABTestingIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 3v18m-5-5l5 5 5-5"/></svg></IconWrapper>; // Split test.
+export const DataGovernanceIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M8 10l2 2 4-4"/><path d="M12 18V6"/></svg></IconWrapper>; // Shield with data flow.
+export const IdentityAccessIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="12" r="3" fill="currentColor" opacity="0.4"/><path d="M12 15v4"/></svg></IconWrapper>; // Shield with a person.
+export const MonitoringIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/><path d="M12 8v4l3 3"/></svg></IconWrapper>; // Dashboard/clock.
+export const AlertingIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 12L12 2 2 12l10 10 10-10z"/><path d="M12 6v6m0 4h.01"/></svg></IconWrapper>; // Triangle with exclamation.
+export const LoggingIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 7h10m-10 4h10m-10 4h7"/></svg></IconWrapper>; // Document with list.
+export const MetricsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625Zm6.75-5.25c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V3.375Z"/></svg></IconWrapper>; // Bar chart.
+export const AutomationIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 12H3m18 0L17 8m4 4L17 16"/><path d="M3 12L7 8m-4 4L7 16"/><path d="M12 6v12"/></svg></IconWrapper>; // Gears with arrows.
+export const OrchestrationIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/><path d="M12 6v12m-3-3l3 3 3-3"/></svg></IconWrapper>; // Conductor baton in a circle.
+export const ResourceManagementIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M6 12h12m-6-6v12"/></svg></IconWrapper>; // Grid layout.
+export const MultiCloudIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-5.056-2.287 4.5 4.5 0 0 0-8.25-2.287 4.5 4.5 0 0 0-1.25 8.25Z"/><path d="M18 17s-2 2-6 2-6-2-6-2"/><path d="M12 7s-2 2-6 2-6-2-6-2"/></svg></IconWrapper>; // Multiple clouds.
+export const HybridCloudIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-5.056-2.287 4.5 4.5 0 0 0-8.25-2.287 4.5 4.5 0 0 0-1.25 8.25Z"/><rect x="3" y="14" width="7" height="7"/></svg></IconWrapper>; // Cloud and on-premise box.
+export const DataCatalogIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><path d="M7 7h10m-10 4h10m-10 4h7"/><circle cx="12" cy="7" r="1.5"/></svg></IconWrapper>; // Document with index.
+
+// --- Placeholder for up to 1000 more features/services ---
+// The following section demonstrates the extensibility of the QNP icon library.
+// While not all 1000 features/services are explicitly rendered with unique SVGs here,
+// this structural framework allows for their seamless integration as QNP evolves.
+// Each comment represents a potential feature, AI capability, or external service
+// that can be visually represented. The actual SVG path would be designed
+// according to its specific function and visual clarity.
+
+// Example of further AI-driven features:
+// export const PersonalizationEngineIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const FraudDetectionIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const AnomalyDetectionIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const PredictiveMaintenanceIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const ComputerVisionApiIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const GenerativeAIIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const TextToSpeechIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const SpeechToTextIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const KnowledgeGraphIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const DataLabelingIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+
+// Example of further External Services:
+// Database Ecosystem:
+// export const SQLServerIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const OracleDBIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const SnowflakeIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const RedshiftIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const BigQueryIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const CouchbaseIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const Neo4jIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+
+// SaaS Integrations:
+// export const SalesforceIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const HubSpotIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const ZendeskIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const SlackIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const TeamsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const JiraIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const ConfluenceIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const StripeIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const PayPalIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const TwilioIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const SendGridIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+
+// Development & Deployment Platforms:
+// export const VercelIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const NetlifyIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const DigitalOceanIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const HerokuIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const FirebaseIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const CloudflareIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+
+// Observability & Security Tools:
+// export const SplunkIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const NewRelicIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const OktaIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const Auth0Icon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+
+// Data & Analytics Tools:
+// export const SegmentIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const MixpanelIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const GoogleAnalyticsIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+
+// Communication & Collaboration Tools:
+// export const ZoomIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+// export const GoogleMeetIcon: React.FC = () => <IconWrapper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="..."/></svg></IconWrapper>;
+
+// ... and so on for hundreds more, illustrating a massive, commercial-grade product.
+// The story continues: Each icon added represents a module, a service, an API endpoint,
+// an AI model, or a custom tool within the sprawling QNP ecosystem. This file is
+// not just a collection; it's the visual blueprint of a highly integrated, intelligent platform.
