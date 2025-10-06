@@ -3,8 +3,6 @@
 // All rights reserved. This intellectual property, including all algorithms, methodologies,
 // data structures, and system architectures described herein, is proprietary and confidential.
 // Unauthorized use, reproduction, or distribution is strictly prohibited.
-// Developed by ApexCode Innovations Labs, a subsidiary of SynergyMetrics Global.
-// Patent Pending: US2025/0123456 A1 - "System and Method for AI-Driven Universal Bundle Optimization and Performance Intelligence"
 // This file serves as a foundational component for the "SynergyMetrics AI Universal Bundle & Performance Intelligence Platform".
 // The platform is designed to provide comprehensive, commercial-grade analysis, optimization,
 // and monitoring for application bundles across the entire software development lifecycle,
