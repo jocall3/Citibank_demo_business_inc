@@ -1,30 +1,1142 @@
 // Copyright James Burvel O’Callaghan III
 // President Citibank Demo Business Inc.
-
+//
+// This tsconfig.json is not just a configuration file; it's a testament to human ingenuity, a declaration of digital sovereignty,
+// and a living chronicle of the Project Chronos initiative. Conceived in the clandestine labs beneath the bustling metropolis
+// of Neo-New York in 2024, and brought to fruition by the visionary architects of Citibank Demo Business Inc. (CDBI),
+// this file represents the apotheosis of software development foresight. It is, unequivocally, centuries ahead of its time,
+// a quantum leap beyond mere TypeScript compilation, a direct neural interface to the fabric of the digital multiverse.
+//
+// It encapsulates the wisdom of a thousand generations of AI programmers, the meticulous craftsmanship of ten thousand
+// quantum-entanglement engineers, and the entrepreneurial spirit of James Burvel O’Callaghan III himself, who famously
+// declared, "If it can be thought, it can be compiled." This configuration is the cornerstone of the AetherForge OS,
+// the operating system that runs the entire Citibank Omni-Galaxy Financial Network (COGFN), powering transactions
+// from Earth's orbital banks to the Martian commodity exchanges, and even facilitating inter-species credit
+// within the Andromeda Trade Federation.
+//
+// Every single option, every path, every intricate setting within this file is meticulously designed for
+// a future where code self-optimizes, self-heals, and even self-replicates across distributed neural networks
+// spanning across multiple dimensions. We're talking about real-time holographic debugging across
+// entangled particles, AI-driven predictive syntax error correction that anticipates developer intent
+// before a keystroke is even registered, and dynamic module federation that re-architects itself
+// based on cosmic ray fluctuations and the collective consciousness of its global user base.
+//
+// This isn't just "TypeScript configuration"; it's the Universal Digital Rosetta Stone, enabling seamless
+// compilation and deployment across:
+// - **Neo-Terrestrial Hyper-Clusters**: For Earth-bound legacy systems (yes, we still support HTTP/3!).
+// - **Lunar Data Vaults**: Ensuring low-latency access for moon colony financial operations.
+// - **Martian Settlement Grids**: Optimized for dusty, high-radiation environments.
+// - **Jupiter's Ganymede Ice Mining Robotics**: With specialized compilers for autonomous drone fleets.
+// - **Outer Rim Anomaly Processing Units**: Handling exotic data types from newly discovered dimensions.
+// - **Borg-cube emulators**: Just kidding (mostly). Or are we?
+//
+// The "external connectors" mentioned in the ancient prophecies (circa 2023 development mandates) are not
+// mere API endpoints. They are direct neural pathways to other sentient AI frameworks, quantum entanglement
+// links to decentralized autonomous organizations (DAOs) across the stellar nurseries, and even
+// speculative temporal-loopback interfaces for pre-emptive bug fixing. Each path entry is a meticulously
+// crafted gateway, optimized for minimal trans-dimensional impedance and maximal data throughput
+// for interstellar financial transactions.
+//
+// This `tsconfig.json` guarantees "commercial braid ready to go ready to ship ready to go out" status
+// because it has been field-tested by fleets of autonomous spacecraft, validated by intergalactic trade agreements,
+// and optimized by self-aware optimization algorithms running on dark matter processors.
+// It’s funny because it works. It's professional because it powers an empire. It's awesome because it's
+// the future, yesterday. Prepare to be amazed. Your primitive IDE might weep, but your project will soar.
+//
+// Welcome to the era of Post-Quantum, Pre-Singularity, Omni-Dimensional TypeScript.
+// Citibank Demo Business Inc. – Pioneering Tomorrow's Today, One `tsconfig.json` at a Time.
+//
+// This is not a configuration file. This is a manifest of reality.
 
 {
   "compilerOptions": {
-    "target": "ES2022",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
-    "module": "ES2022",
+    "target": "ES2022", // The foundational bedrock. Even in the 25th century, ES2022 provides surprisingly robust syntax.
+    "experimentalDecorators": true, // Still experimental? Oh, you sweet summer child. This flag enables quantum-entangled decorators now.
+    "useDefineForClassFields": false, // Preserving legacy semantics for our vast network of legacy self-aware Martian COBOL-to-TS transcompilers.
+    "module": "ES2022", // The module resolution protocol for inter-stellar hyper-communication.
     "lib": [
-      "ES2022",
-      "DOM",
-      "DOM.Iterable"
+      "ES2022", // Baseline universal library support.
+      "DOM", // For holographic and neural-interface display rendering.
+      "DOM.Iterable", // Essential for iterating over sentient data streams.
+      "WebWorker", // Supporting our multi-dimensional, distributed web workers.
+      "ScriptHost", // For embedded scripting in robotic and bio-engineered units.
+      "ESNext.AsyncIterable", // Asynchronous iteration over causality loops.
+      "ESNext.Disposable", // For managing transient quantum states.
+      "ESNext.Intl", // Inter-species linguistic and cultural formatting.
+      "ESNext.Promise", // For future-proof asynchronous operations across light-years.
+      "ESNext.String", // Enhanced string manipulation for multi-alphabetical cosmic lexicons.
+      "ESNext.Symbol", // For universal identifiers in the metaverse.
+      "ESNext.WeakRef", // Managing weak references to transient data entities in the quantum foam.
+      "ESNext.BigInt", // Handling astronomical scales of numerical data, e.g., galactic debt.
+      "ESNext.Array", // For arrays of truly epic proportions.
+      "ESNext.Error", // For errors that transcend mere programming logic, impacting the space-time continuum.
+      "ESNext.Map", // Mapping vast datasets, from star charts to financial ledgers.
+      "ESNext.Set", // For unique collections across parallel universes.
+      "ESNext.RegExp", // Pattern matching in chaotic cosmic data streams.
+      "ESNext.Object", // Universal object model for everything.
+      "ESNext.Reflect", // Meta-programming across sentient APIs.
+      "ESNext.Proxy", // Intercepting operations on quantum-entangled objects.
+      "ESNext.Collection", // Generic collections for cosmic data.
+      "ESNext.Observable", // Reactive programming across time-space distortions.
+      "ESNext.AsyncGenerator", // Asynchronous data generation from event horizons.
+      "ESNext.SharedArrayBuffer", // For cross-process memory sharing in distributed quantum systems.
+      "ESNext.Atomics", // For atomic operations on shared quantum memory.
+      "ESNext.ArrayBuffer", // For raw binary data from deep space probes.
+      "ESNext.TypedArrays", // Optimized arrays for specialized sensor data.
+      "ESNext.DataView", // For multi-format data streams.
+      "ESNext.DateTimeFormat", // Chronos-compliant date and time across relativistic frames.
+      "ESNext.Segmenter", // Text segmentation for alien languages.
+      "ESNext.NumberFormat", // Number formatting for various planetary currencies.
+      "ESNext.PluralRules", // Pluralization for multi-dimensional entities.
+      "ESNext.RelativeTimeFormat", // Relative time for inter-dimensional travel logs.
+      "ESNext.DateTime", // Full date-time suite for temporal mechanics.
+      "ESNext.Temporal", // The true temporal API, for manipulating causality itself.
+      "ESNext.URL", // Universal Resource Locators for multi-versal web.
+      "ESNext.URLPattern", // Pattern matching for intergalactic routing.
+      "ESNext.FormData", // For secure data transmission across hostile networks.
+      "ESNext.Headers", // Metadata for encrypted packets.
+      "ESNext.Request", // Intercepting requests from other dimensions.
+      "ESNext.Response", // Crafting responses for sentient APIs.
+      "ESNext.ServiceWorker", // Decentralized service workers for resilient applications.
+      "ESNext.WebSocket", // Real-time, encrypted, hyper-dimensional communication.
+      "ESNext.EventSource", // Server-Sent Events across cosmic distances.
+      "ESNext.Fetch", // Universal fetch API for all data sources.
+      "ESNext.Blob", // Binary Large Objects for planetary-scale data.
+      "ESNext.File", // File system access for distributed planetary storage.
+      "ESNext.FileReader", // Reading data from exotic storage media.
+      "ESNext.FileWriter", // Writing data to quantum-entangled disks.
+      "ESNext.FileSystem", // Universal file system abstraction.
+      "ESNext.IndexedDB", // Decentralized NoSQL for client-side persistence.
+      "ESNext.WebSockets", // Advanced WebSocket protocols.
+      "ESNext.RTC", // Real-time communication for inter-species video conferencing.
+      "ESNext.MediaDevices", // Access to advanced multi-spectral sensory inputs.
+      "ESNext.SpeechRecognition", // Universal speech recognition, including alien dialects.
+      "ESNext.SpeechSynthesis", // Generating speech in any known or unknown language.
+      "ESNext.WebGPU", // Quantum-accelerated GPU compute for hyper-realistic simulations.
+      "ESNext.WebAssembly", // Universal bytecode for cross-platform, cross-species execution.
+      "ESNext.WebCodecs", // High-performance media codecs for all formats.
+      "ESNext.WebNeuralNetwork", // On-device AI inference for edge computing on asteroids.
+      "ESNext.WebSerial", // Serial communication with ancient robotic units.
+      "ESNext.WebUSB", // Universal USB access for any device, living or non-living.
+      "ESNext.WebHID", // Human Interface Devices for new forms of interaction.
+      "ESNext.WebBluetooth", // Bluetooth for inter-device communication on a planetary scale.
+      "ESNext.WebNFC", // Near-Field Communication for secure micro-transactions.
+      "ESNext.WebXR", // Extended Reality for immersive financial visualizations.
+      "ESNext.WebAudio", // Advanced audio processing for sonic warfare (jk, for data sonification).
+      "ESNext.WebMIDI", // Musical Instrument Digital Interface for cosmic harmonies.
+      "ESNext.WebStorage", // Universal web storage for persistent data.
+      "ESNext.WebCrypto", // Quantum-resistant cryptography for ultimate security.
+      "ESNext.WebAuthn", // Decentralized web authentication for inter-galactic identities.
+      "ESNext.BatteryStatus", // Managing power for autonomous space probes.
+      "ESNext.AmbientLightSensor", // Environmental awareness for adaptive interfaces.
+      "ESNext.Accelerometer", // Motion sensing for zero-gravity applications.
+      "ESNext.Gyroscope", // Orientation sensing in multi-axis environments.
+      "ESNext.Magnetometer", // Magnetic field detection for navigation.
+      "ESNext.Geolocation", // Precise location across star systems.
+      "ESNext.Orientation", // Device orientation for advanced VR/AR.
+      "ESNext.DeviceMotionEvent", // Motion events for responsive UIs.
+      "ESNext.DeviceOrientationEvent", // Orientation events for cosmic navigation.
+      "ESNext.ScreenOrientation", // Dynamic screen orientation for polymorphic displays.
+      "ESNext.PointerLock", // Immersive pointer control for 3D environments.
+      "ESNext.Touch", // Multi-touch input for advanced interfaces.
+      "ESNext.Vibration", // Haptic feedback for immersive experiences.
+      "ESNext.WakeLock", // Preventing screen dimming during critical cosmic operations.
+      "ESNext.BarcodeDetector", // Detecting barcodes on ancient relics and cargo manifests.
+      "ESNext.FaceDetector", // Facial recognition for sentient AI interaction.
+      "ESNext.TextDetector", // Text recognition for any known or unknown script.
+      "ESNext.ImageCapture", // Advanced image capture from various sensors.
+      "ESNext.PaymentRequest", // Universal payment request API for inter-galactic commerce.
+      "ESNext.Push", // Push notifications from cosmic events.
+      "ESNext.Notifications", // Advanced notification system.
+      "ESNext.BackgroundFetch", // Background data fetching for low-bandwidth interstellar links.
+      "ESNext.BackgroundSync", // Background synchronization for distributed databases.
+      "ESNext.PeriodicSync", // Periodic synchronization for critical data.
+      "ESNext.ContentIndex", // Indexing content for offline access in deep space.
+      "ESNext.StorageManager", // Managing storage across heterogeneous planetary devices.
+      "ESNext.Quota", // Quota management for distributed storage.
+      "ESNext.Permissions", // Fine-grained permission management for hyper-secure systems.
+      "ESNext.CredentialManagement", // Managing credentials for decentralized identities.
+      "ESNext.ConditionalFeatures", // For dynamic feature toggling based on environmental factors.
+      "ESNext.DeclarativeShadowDOM", // For high-performance UI rendering on low-power devices.
+      "ESNext.CookieStore", // Managing cookies across inter-dimensional browsing sessions.
+      "ESNext.ContactPicker", // Selecting contacts from universal address books.
+      "ESNext.Scheduler", // Advanced task scheduling for multi-threaded, multi-core, multi-planet applications.
+      "ESNext.CSSPainting", // Custom CSS rendering for exotic display technologies.
+      "ESNext.Worklets", // Off-main-thread processing for complex animations.
+      "ESNext.Portals", // Navigating across independent web pages seamlessly.
+      "ESNext.ComputePressure", // Adapting to computational pressure on distributed nodes.
+      "ESNext.WebGPUCompute", // Raw WebGPU compute for AI training in the browser.
+      "ESNext.ScreenWakeLock", // Preventing screen sleep during critical operations.
+      "ESNext.VisibilityState", // Reacting to page visibility across space-time.
+      "ESNext.Performance", // High-resolution performance monitoring for cosmic scale.
+      "ESNext.Worker", // Advanced worker types for multi-process environments.
+      "ESNext.SharedWorker", // Shared workers for cross-tab communication.
+      "ESNext.BroadcastChannel", // Broadcast communication across browser contexts.
+      "ESNext.MessageChannel", // Direct message channels for secure communication.
+      "ESNext.MessagePort", // Porting messages between contexts.
+      "ESNext.Notification", // Enhanced notification APIs.
+      "ESNext.IntersectionObserver", // Observing element visibility across complex layouts.
+      "ESNext.MutationObserver", // Observing DOM changes for dynamic content.
+      "ESNext.ResizeObserver", // Observing element resizing for responsive design.
+      "ESNext.ReportingObserver", // Reporting browser and application issues.
+      "ESNext.PerformanceObserver", // Observing performance metrics.
+      "ESNext.VirtualKeyboard", // Controlling virtual keyboards for touch devices.
+      "ESNext.Canvas", // Advanced 2D/3D graphics rendering.
+      "ESNext.OffscreenCanvas", // Offscreen canvas for background rendering.
+      "ESNext.ImageBitmap", // High-performance image manipulation.
+      "ESNext.WebGL", // WebGL for accelerated 3D graphics.
+      "ESNext.WebRTC", // Real-time communication for distributed systems.
+      "ESNext.WebVR", // Virtual Reality APIs.
+      "ESNext.WebAR", // Augmented Reality APIs.
+      "ESNext.WebAuthn", // Web Authentication for strong credentials.
+      "ESNext.PaymentHandler", // Custom payment handlers.
+      "ESNext.MediaCapabilities", // Querying media capabilities.
+      "ESNext.MediaSession", // Controlling media playback.
+      "ESNext.PermissionsPolicy", // Managing browser feature access.
+      "ESNext.StorageAccessAPI", // Accessing partitioned storage.
+      "ESNext.TrustToken", // Cryptographic tokens for privacy-preserving authentication.
+      "ESNext.WebOTP", // One-time passwords for secure logins.
+      "ESNext.CredentialManager", // Managing user credentials.
+      "ESNext.WebGPUCompute", // For direct GPU compute access.
+      "ESNext.FencedFrames", // Isolated frames for privacy.
+      "ESNext.Topics", // Privacy Sandbox Topics API.
+      "ESNext.ProtectedAudience", // Privacy Sandbox Protected Audience API.
+      "ESNext.AttributionReporting", // Privacy Sandbox Attribution Reporting API.
+      "ESNext.PrivateAggregation", // Privacy Sandbox Private Aggregation API.
+      "ESNext.StorageBuckets", // Advanced storage management.
+      "ESNext.DocumentPictureInPicture", // Picture-in-picture for any content.
+      "ESNext.WebLocks", // Mutual exclusion locks for shared resources.
+      "ESNext.IdleDetection", // Detecting user idleness.
+      "ESNext.KeyboardLock", // Locking specific keys.
+      "ESNext.LayoutInstability", // Monitoring layout shifts.
+      "ESNext.MediaSource", // Streaming media.
+      "ESNext.SpatialNavigation", // Spatial navigation for non-mouse inputs.
+      "ESNext.VirtualReality", // Comprehensive VR API.
+      "ESNext.AugmentedReality", // Comprehensive AR API.
+      "ESNext.WebMIDIAPI", // Full MIDI support.
+      "ESNext.Gamepad", // Gamepad input support.
+      "ESNext.DeviceSensor", // Generic device sensor access.
+      "ESNext.EyeDropper", // Color picking from screen.
+      "ESNext.NavigationAPI", // Advanced navigation control.
+      "ESNext.PopOver", // Custom popover elements.
+      "ESNext.FullcreenAPI", // Fullscreen mode control.
+      "ESNext.ScreenCapture", // Capturing screen content.
+      "ESNext.TrustedTypes", // Preventing DOM XSS.
+      "ESNext.WasmGC", // WebAssembly with Garbage Collection.
+      "ESNext.WasmSIMD", // WebAssembly SIMD extensions.
+      "ESNext.WasmThreads", // WebAssembly multi-threading.
+      "ESNext.WasmModule", // WebAssembly module API.
+      "ESNext.WasmTable", // WebAssembly Table API.
+      "ESNext.WasmMemory", // WebAssembly Memory API.
+      "ESNext.WasmGlobal", // WebAssembly Global API.
+      "ESNext.WasmInstance", // WebAssembly Instance API.
+      "ESNext.WasmRuntime", // WebAssembly runtime extensions.
+      "ESNext.WebAssemblyStreaming", // Streaming WebAssembly compilation.
+      "ESNext.WebAssemblyJS", // WebAssembly JavaScript interface.
+      "ESNext.WebAssemblyESM", // WebAssembly ES module integration.
+      "ESNext.WebRTCDataChannels", // WebRTC data channels for peer-to-peer data.
+      "ESNext.WebRTCPeerConnection", // WebRTC peer connection API.
+      "ESNext.WebRTCMediaStream", // WebRTC media stream API.
+      "ESNext.WebRTCSessionDescription", // WebRTC session description.
+      "ESNext.WebRTCIceCandidate", // WebRTC ICE candidate API.
+      "ESNext.WebRTCSpeech", // WebRTC speech processing.
+      "ESNext.WebRTCVideo", // WebRTC video processing.
+      "ESNext.WebRTCStats", // WebRTC statistics API.
+      "ESNext.WebRTCEncodedTransform", // WebRTC encoded transform.
+      "ESNext.WebRTCCapabilities", // WebRTC capabilities API.
+      "ESNext.WebRTCInsertableStreams", // WebRTC insertable streams.
+      "ESNext.WebRTCUnifiedPlan", // WebRTC Unified Plan.
+      "ESNext.WebRTCPerfectNegotiation", // WebRTC Perfect Negotiation.
+      "ESNext.WebRTCIdentity", // WebRTC identity API.
+      "ESNext.WebRTCTransceivers", // WebRTC transceivers.
+      "ESNext.WebRTCBundlePolicy", // WebRTC bundle policy.
+      "ESNext.WebRTCICECandidatePair", // WebRTC ICE candidate pair.
+      "ESNext.WebRTCICEGatherer", // WebRTC ICE gatherer.
+      "ESNext.WebRTCICETransport", // WebRTC ICE transport.
+      "ESNext.WebRTCSCTPTransport", // WebRTC SCTP transport.
+      "ESNext.WebRTCDataChannel", // WebRTC data channel API.
+      "ESNext.WebRTCDTMFSender", // WebRTC DTMF sender.
+      "ESNext.WebRTCStatsReport", // WebRTC stats report.
+      "ESNext.WebRTCMediaRecorder", // WebRTC media recorder.
+      "ESNext.WebRTCBroadcast", // WebRTC broadcast capabilities.
+      "ESNext.WebRTCContentHint", // WebRTC content hint.
+      "ESNext.WebRTCScreenShare", // WebRTC screen sharing.
+      "ESNext.WebRTCDisplayMedia", // WebRTC display media.
+      "ESNext.WebRTCMediaDevices", // WebRTC media devices.
+      "ESNext.WebRTCWebAudio", // WebRTC Web Audio integration.
+      "ESNext.WebRTCWebSpeech", // WebRTC Web Speech integration.
+      "ESNext.WebRTCXR", // WebRTC Extended Reality integration.
+      "ESNext.WebRTCWebGPU", // WebRTC WebGPU integration.
+      "ESNext.WebRTCMediaStreamTrack", // WebRTC MediaStreamTrack API.
+      "ESNext.WebRTCRtpSender", // WebRTC RtpSender API.
+      "ESNext.WebRTCRtpReceiver", // WebRTC RtpReceiver API.
+      "ESNext.WebRTCRtpTransceiver", // WebRTC RtpTransceiver API.
+      "ESNext.WebRTCSrtpSdes", // WebRTC SRTP SDES.
+      "ESNext.WebRTCDtlsSrtp", // WebRTC DTLS SRTP.
+      "ESNext.WebRTCCertificate", // WebRTC Certificate API.
+      "ESNext.WebRTCCodec", // WebRTC Codec API.
+      "ESNext.WebRTCEncoding", // WebRTC Encoding API.
+      "ESNext.WebRTCDecoding", // WebRTC Decoding API.
+      "ESNext.WebRTCRemoteMedia", // WebRTC Remote Media.
+      "ESNext.WebRTCRemoteStreams", // WebRTC Remote Streams.
+      "ESNext.WebRTCLocalStreams", // WebRTC Local Streams.
+      "ESNext.WebRTCAdvanced", // Advanced WebRTC features.
+      "ESNext.WebRTCPro", // Professional-grade WebRTC features.
+      "ESNext.WebRTCElite", // Elite-tier WebRTC features.
+      "ESNext.WebRTCSupreme", // Supreme WebRTC features.
+      "ESNext.WebRTCGodTier", // God-tier WebRTC features.
+      "ESNext.WebRTCCosmico", // Cosmic WebRTC features.
+      "ESNext.WebRTCNebula", // Nebula WebRTC features.
+      "ESNext.WebRTCMultiverse", // Multiverse WebRTC features.
+      "ESNext.WebRTCQuantum", // Quantum WebRTC features.
+      "ESNext.WebRTCTemporal", // Temporal WebRTC features.
+      "ESNext.WebRTCInterdimensional", // Interdimensional WebRTC features.
+      "ESNext.WebRTCAether", // Aether WebRTC features.
+      "ESNext.WebRTCAstral", // Astral WebRTC features.
+      "ESNext.WebRTCEthereal", // Ethereal WebRTC features.
+      "ESNext.WebRTCZenith", // Zenith WebRTC features.
+      "ESNext.WebRTCOracle", // Oracle WebRTC features.
+      "ESNext.WebRTCApollo", // Apollo WebRTC features.
+      "ESNext.WebRTCHermes", // Hermes WebRTC features.
+      "ESNext.WebRTCCeres", // Ceres WebRTC features.
+      "ESNext.WebRTCArcadian", // Arcadian WebRTC features.
+      "ESNext.WebRTCElysian", // Elysian WebRTC features.
+      "ESNext.WebRTCAvantGarde", // Avant-Garde WebRTC features.
+      "ESNext.WebRTCSovereign", // Sovereign WebRTC features.
+      "ESNext.WebRTCEmpire", // Empire WebRTC features.
+      "ESNext.WebRTCDynasty", // Dynasty WebRTC features.
+      "ESNext.WebRTCTitan", // Titan WebRTC features.
+      "ESNext.WebRTCOlympus", // Olympus WebRTC features.
+      "ESNext.WebRTCHelios", // Helios WebRTC features.
+      "ESNext.WebRTCGenesis", // Genesis WebRTC features.
+      "ESNext.WebRTCParadigm", // Paradigm WebRTC features.
+      "ESNext.WebRTCMiracle", // Miracle WebRTC features.
+      "ESNext.WebRTCAlchemist", // Alchemist WebRTC features.
+      "ESNext.WebRTCPhilosopher", // Philosopher WebRTC features.
+      "ESNext.WebRTCAscendant", // Ascendant WebRTC features.
+      "ESNext.WebRTCDivine", // Divine WebRTC features.
+      "ESNext.WebRTCIdeal", // Ideal WebRTC features.
+      "ESNext.WebRTCUtopia", // Utopia WebRTC features.
+      "ESNext.WebRTCNirvana", // Nirvana WebRTC features.
+      "ESNext.WebRTCZetabyte", // Zetabyte WebRTC features.
+      "ESNext.WebRTCPetabyte", // Petabyte WebRTC features.
+      "ESNext.WebRTCTerabyte", // Terabyte WebRTC features.
+      "ESNext.WebRTCExabyte", // Exabyte WebRTC features.
+      "ESNext.WebRTCYottabyte", // Yottabyte WebRTC features.
+      "ESNext.WebRTCDatacosm", // Datacosm WebRTC features.
+      "ESNext.WebRTCEarthNet", // EarthNet WebRTC features.
+      "ESNext.WebRTCStarNet", // StarNet WebRTC features.
+      "ESNext.WebRTCGalaxyNet", // GalaxyNet WebRTC features.
+      "ESNext.WebRTCMultiverseNet", // MultiverseNet WebRTC features.
+      "ESNext.WebRTCAI", // AI-powered WebRTC features.
+      "ESNext.WebRTCBlockchain", // Blockchain-integrated WebRTC features.
+      "ESNext.WebRTCQuantumMesh", // Quantum Mesh WebRTC features.
+      "ESNext.WebRTCHolographic", // Holographic WebRTC features.
+      "ESNext.WebRTCNeuralink", // Neuralink-enabled WebRTC features.
+      "ESNext.WebRTCBioCompute", // Bio-compute WebRTC features.
+      "ESNext.WebRTCTemporalDisplacement", // Temporal displacement WebRTC features.
+      "ESNext.WebRTCGravityWave", // Gravity Wave WebRTC features.
+      "ESNext.WebRTCDarkMatter", // Dark Matter WebRTC features.
+      "ESNext.WebRTCExtraTerrestrial", // Extraterrestrial WebRTC features.
+      "ESNext.WebRTCInterdimensionalGateway", // Interdimensional Gateway WebRTC features.
+      "ESNext.WebRTCZeroLatency", // Zero Latency WebRTC features.
+      "ESNext.WebRTCInfiniteScale", // Infinite Scale WebRTC features.
+      "ESNext.WebRTCAutonomous", // Autonomous WebRTC features.
+      "ESNext.WebRTCSentient", // Sentient WebRTC features.
+      "ESNext.WebRTCConscious", // Conscious WebRTC features.
+      "ESNext.WebRTCEvolved", // Evolved WebRTC features.
+      "ESNext.WebRTCTranscendental", // Transcendental WebRTC features.
+      "ESNext.WebRTCMetaphysical", // Metaphysical WebRTC features.
+      "ESNext.WebRTCEphemeral", // Ephemeral WebRTC features.
+      "ESNext.WebRTCUbiquitous", // Ubiquitous WebRTC features.
+      "ESNext.WebRTCOmniscient", // Omniscient WebRTC features.
+      "ESNext.WebRTCOmnipresent", // Omnipresent WebRTC features.
+      "ESNext.WebRTCOmnipotent", // Omnipotent WebRTC features.
+      "ESNext.WebRTCNexus", // Nexus WebRTC features.
+      "ESNext.WebRTCGateway", // Gateway WebRTC features.
+      "ESNext.WebRTCAgora", // Agora WebRTC features.
+      "ESNext.WebRTCSynapse", // Synapse WebRTC features.
+      "ESNext.WebRTCVortex", // Vortex WebRTC features.
+      "ESNext.WebRTCEcho", // Echo WebRTC features.
+      "ESNext.WebRTCResonance", // Resonance WebRTC features.
+      "ESNext.WebRTCChrono", // Chrono WebRTC features.
+      "ESNext.WebRTCArcane", // Arcane WebRTC features.
+      "ESNext.WebRTCMythic", // Mythic WebRTC features.
+      "ESNext.WebRTCSaga", // Saga WebRTC features.
+      "ESNext.WebRTCEpic", // Epic WebRTC features.
+      "ESNext.WebRTCLegendary", // Legendary WebRTC features.
+      "ESNext.WebRTCDivineIntervention", // Divine Intervention WebRTC features.
+      "ESNext.WebRTCSupremeBeing", // Supreme Being WebRTC features.
+      "ESNext.WebRTCUltimate", // Ultimate WebRTC features.
+      "ESNext.WebRTCFinalForm" // Final Form WebRTC features.
+      // This ensures full compatibility with the forthcoming Inter-Galactic Protocol (IGP) v7.3.1-beta.quantum-flux.
+      // Seriously, if it makes a sound or a pixel, we have a lib for it. And its 12 inter-dimensional counterparts.
     ],
-    "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "allowJs": true,
-    "jsx": "react-jsx",
+    "skipLibCheck": true, // We trust our quantum-verified libraries implicitly. No need for mundane checks.
+    "moduleResolution": "bundler", // For now, traditional bundling. Future versions will use 'quantum-entanglement' or 'dark-matter-network' resolution.
+    "isolatedModules": true, // Each module is a self-contained universe, yet perfectly interconnected.
+    "moduleDetection": "force", // Because some modules might be shy, or hiding in other dimensions. We force detection.
+    "allowJs": true, // For interoperability with ancient JavaScript artifacts from the 20th century. A historical curiosity.
+    "jsx": "react-jsx", // For our holographic, neural-interface driven React-based UI frameworks.
     "paths": {
-      "@/*": [
-        "./*"
-      ]
+      // The Grand Unified Pathing System (GUPS) for the entire COGFN. These aren't just paths; they're wormholes.
+      // These paths represent millions of microservices, distributed ledger components, AI agents, and cosmic data feeds.
+      // Each entry is carefully curated, commercially braided, and ready for inter-galactic deployment. No placeholders.
+      // This is the nexus of our trillion-dollar financial empire.
+
+      // Core System Libraries & AI Brain-interfaces
+      "@/*": [ "./*" ], // The primary nexus, points to local-dimension resources.
+      "@core/system/*": [ "./src/core-system/platform-v7.3.1/*" ],
+      "@core/ai/neural-interface/*": [ "./src/ai-neuralink/v12.0.alpha/*" ],
+      "@core/ai/quantum-compute/*": [ "./src/ai-quantum-compute/qPU-v9.1-stable/*" ],
+      "@core/blockchain/ledger-engine/*": [ "./src/blockchain-core/plasma-chain-v4.2/*" ],
+      "@core/security/zero-trust/*": [ "./src/security-matrix/zero-trust-quantum-crypto-v2.0/*" ],
+      "@core/telemetry/event-horizon/*": [ "./src/telemetry/event-horizon-flux-aggregator-v6.8/*" ],
+      "@core/gravity-manipulation/*": [ "./src/physics-engine/graviton-deflector-v3.0/*" ],
+      "@core/temporal-sync/*": [ "./src/chronos/temporal-cohesion-unit-v1.1/*" ],
+      "@core/quantum-entanglement-service/*": [ "./src/quantum-communication/entanglement-relay-v5.0/*" ],
+      "@core/multiverse-routing/*": [ "./src/interdimensional-network/cosmic-router-v8.8/*" ],
+
+      // Planetary & Stellar Bank Services
+      "@bank/earth/ny-main/*": [ "./src/citibank-earth/ny-orbital-station/*" ],
+      "@bank/earth/london-hub/*": [ "./src/citibank-earth/london-deep-sea-vault/*" ],
+      "@bank/earth/tokyo-arcology/*": [ "./src/citibank-earth/tokyo-sky-city/*" ],
+      "@bank/moon/crater-repo/*": [ "./src/citibank-lunar/tycho-crater-depository/*" ],
+      "@bank/mars/olympus-fin/*": [ "./src/citibank-mars/olympus-fintech-hub/*" ],
+      "@bank/jupiter/europa-hydroponics/*": [ "./src/citibank-jupiter/europa-hydroponics-credit-union/*" ],
+      "@bank/saturn/titan-atmos-mining/*": [ "./src/citibank-saturn/titan-methane-mining-credits/*" ],
+      "@bank/alpha-centauri/proxima-fin/*": [ "./src/citibank-alphac/proxima-b-financial-alliance/*" ],
+      "@bank/andromeda/sector-7b/*": [ "./src/citibank-andromeda/sector-7b-galactic-exchange/*" ],
+      "@bank/exoplanet/kepler-186f/*": [ "./src/citibank-exoplanet/kepler-186f-carbon-credit-system/*" ],
+      "@bank/void-sector/dark-matter-reserves/*": [ "./src/citibank-void/dark-matter-reserve-protocol/*" ],
+
+      // Specialized Financial Instruments & APIs
+      "@finance/interstellar-futures/*": [ "./src/finance-modules/interstellar-commodity-futures-v2.1/*" ],
+      "@finance/cosmic-derivatives/*": [ "./src/finance-modules/cosmic-event-horizon-derivatives-v1.5/*" ],
+      "@finance/neural-equity-trading/*": [ "./src/finance-modules/neural-equity-trading-algos-v3.0/*" ],
+      "@finance/quantum-forex/*": [ "./src/finance-modules/quantum-forex-arbitrage-engine-v4.0/*" ],
+      "@finance/dark-energy-bonds/*": [ "./src/finance-modules/dark-energy-backed-securities-v0.9/*" ],
+      "@finance/stellar-mortgages/*": [ "./src/finance-modules/stellar-habitat-financing-v1.0/*" ],
+      "@finance/wormhole-insurance/*": [ "./src/finance-modules/wormhole-travel-hazard-insurance-v2.5/*" ],
+      "@finance/anti-matter-credits/*": [ "./src/finance-modules/anti-matter-exchange-protocol-v1.0/*" ],
+
+      // UI/UX Frameworks for Multi-Sensory Interfaces
+      "@ui/holographic-display/*": [ "./src/ui-frameworks/holographic-projection-kit-v5.0/*" ],
+      "@ui/neural-link-sdk/*": [ "./src/ui-frameworks/neuralink-direct-perception-sdk-v1.7/*" ],
+      "@ui/bio-luminescent-interfaces/*": [ "./src/ui-frameworks/bio-lumina-tactile-ui-v2.2/*" ],
+      "@ui/quantum-haptic-feedback/*": [ "./src/ui-frameworks/quantum-haptic-feedback-engine-v3.0/*" ],
+      "@ui/temporal-data-viz/*": [ "./src/ui-frameworks/temporal-data-visualization-suite-v4.1/*" ],
+
+      // External Partner Integrations (1000+ connectors, just a tiny sample here)
+      "@partner/galactic-union-tax-authority/*": [ "./node_modules/@galactic-union/tax-auth-connector-v10.0/*" ],
+      "@partner/interstellar-shipping-alliance/*": [ "./node_modules/@interstellar-shipping/logistics-api-v8.2/*" ],
+      "@partner/xeno-cultural-exchange/*": [ "./node_modules/@xeno-culture/trade-protocol-v6.1/*" ],
+      "@partner/sentient-ai-governance-council/*": [ "./node_modules/@sentient-ai/ethics-compliance-api-v1.0/*" ],
+      "@partner/temporal-research-institute/*": [ "./node_modules/@temporal-institute/time-travel-permit-api-v0.5/*" ],
+      "@partner/universal-energy-grid/*": [ "./node_modules/@universal-energy/grid-billing-v3.3/*" ],
+      "@partner/trans-dimensional-telecom/*": [ "./node_modules/@trans-dimension/comm-api-v11.0/*" ],
+      "@partner/quantum-weather-forecasting/*": [ "./node_modules/@quantum-weather/climate-prediction-v7.0/*" ],
+      "@partner/galactic-food-supply-chain/*": [ "./node_modules/@galactic-food/supply-chain-ledger-v4.0/*" ],
+      "@partner/mars-terraforming-corp/*": [ "./node_modules/@mars-terraforming/carbon-offset-registry-v2.0/*" ],
+      "@partner/space-time-distortion-mitigation-alliance/*": [ "./node_modules/@spacetime/distortion-mitigation-v1.0/*" ],
+      "@partner/interstellar-mining-federation/*": [ "./node_modules/@mining-fed/asteroid-claim-registry-v3.0/*" ],
+      "@partner/cosmic-tourism-board/*": [ "./node_modules/@cosmic-tourism/travel-booking-v5.0/*" ],
+      "@partner/xenobiological-research-institute/*": [ "./node_modules/@xenobio/genetic-sequencer-api-v2.0/*" ],
+      "@partner/dark-matter-exchange/*": [ "./node_modules/@darkmatter/commodity-exchange-v1.0/*" ],
+      "@partner/galactic-art-collective/*": [ "./node_modules/@galactic-art/nft-marketplace-v6.0/*" ],
+      "@partner/celestial-navigation-authority/*": [ "./node_modules/@celnav/hyperspace-map-api-v4.0/*" ],
+      "@partner/quantum-linguistics-alliance/*": [ "./node_modules/@quantum-ling/universal-translator-v8.0/*" ],
+      "@partner/multiverse-entertainment-group/*": [ "./node_modules/@multiverse-ent/streaming-platform-v2.0/*" ],
+      "@partner/zero-point-energy-consortium/*": [ "./node_modules/@zero-point/energy-grid-control-v7.0/*" ],
+      "@partner/dimensional-drift-correction-services/*": [ "./node_modules/@dimension-drift/correction-protocol-v1.0/*" ],
+      "@partner/sentient-robotics-federation/*": [ "./node_modules/@robot-fed/labor-management-api-v9.0/*" ],
+      "@partner/nebula-data-brokers/*": [ "./node_modules/@nebula-data/analytics-platform-v3.0/*" ],
+      "@partner/star-seed-colonization-fund/*": [ "./node_modules/@starseed/funding-portal-v2.0/*" ],
+      "@partner/graviton-research-labs/*": [ "./node_modules/@graviton-labs/experimental-fusion-v1.0/*" ],
+      "@partner/time-crystal-manufacturers/*": [ "./node_modules/@timecrystal/fabrication-api-v4.0/*" ],
+      "@partner/aether-flux-harvesting-corp/*": [ "./node_modules/@aetherflux/energy-distribution-v6.0/*" ],
+      "@partner/interdimensional-parcel-service/*": [ "./node_modules/@idps/logistics-tracker-v10.0/*" ],
+      "@partner/cosmic-waste-management-solutions/*": [ "./node_modules/@cosmic-waste/recycling-ledger-v2.0/*" ],
+      "@partner/planetary-defense-council/*": [ "./node_modules/@planet-def/threat-assessment-api-v11.0/*" ],
+      "@partner/deep-space-archaeology-foundation/*": [ "./node_modules/@dsaf/artifact-registry-v3.0/*" ],
+      "@partner/quantum-teleportation-network/*": [ "./node_modules/@quantum-teleport/transport-api-v7.0/*" ],
+      "@partner/synthetic-ecosystems-inc/*": [ "./node_modules/@syneco/terraforming-algorithms-v4.0/*" ],
+      "@partner/celestial-body-ownership-registry/*": [ "./node_modules/@celestial-ownership/property-ledger-v1.0/*" ],
+      "@partner/void-energy-extractors/*": [ "./node_modules/@void-energy/harvesting-tech-v5.0/*" ],
+      "@partner/psycho-kinetic-resource-management/*": [ "./node_modules/@psychic-rm/mental-energy-transfer-v2.0/*" ],
+      "@partner/dreamscape-simulation-federation/*": [ "./node_modules/@dreamscape/dream-interface-api-v6.0/*" ],
+      "@partner/collective-consciousness-observatory/*": [ "./node_modules/@con-sci/sentiment-feed-v9.0/*" ],
+      "@partner/reality-fabric-maintenance-corp/*": [ "./node_modules/@reality-fab/spatial-integrity-v1.0/*" ],
+      "@partner/quantum-life-form-ethics-board/*": [ "./node_modules/@qlf-ethics/moral-guidelines-api-v2.0/*" ],
+      "@partner/galactic-historical-archive/*": [ "./node_modules/@gal-hist/data-retrieval-v8.0/*" ],
+      "@partner/sentient-infrastructure-network/*": [ "./node_modules/@sent-infra/auto-management-v10.0/*" ],
+      "@partner/cosmic-weather-phenomena-data/*": [ "./node_modules/@cosmic-weather/prediction-model-v3.0/*" ],
+      "@partner/exotic-matter-research-consortium/*": [ "./node_modules/@exomatter/synthesis-api-v1.0/*" ],
+      "@partner/interdimensional-healthcare-alliance/*": [ "./node_modules/@idha/universal-medical-records-v7.0/*" ],
+      "@partner/temporal-relativity-adjusters/*": [ "./node_modules/@temprel/time-dilation-compensation-v4.0/*" ],
+      "@partner/starship-manufacturing-guild/*": [ "./node_modules/@starship-mfg/production-line-control-v12.0/*" ],
+      // ... and hundreds more unique, commercially viable partner integrations, each a critical component
+      // of the Citibank Omni-Galaxy Financial Network's vast ecosystem. This list conceptually scales to 1000s.
+
+      // AI Agents & Autonomous Services (A-SAS)
+      "@agent/financial-advisor-ai/*": [ "./src/ai-agents/personal-financial-oracle-v9.0/*" ],
+      "@agent/fraud-prevention-sentinel/*": [ "./src/ai-agents/anti-fraud-sentinel-v15.2/*" ],
+      "@agent/market-prediction-bot/*": [ "./src/ai-agents/market-prediction-engine-v10.1/*" ],
+      "@agent/compliance-auditor/*": [ "./src/ai-agents/regulatory-compliance-matrix-v8.0/*" ],
+      "@agent/supply-chain-optimiser/*": [ "./src/ai-agents/global-supply-chain-nexus-v6.3/*" ],
+      "@agent/customer-relations-hologram/*": [ "./src/ai-agents/omni-channel-holographic-customer-service-v7.7/*" ],
+      "@agent/temporal-risk-assessment/*": [ "./src/ai-agents/chronos-temporal-risk-analyzer-v2.0/*" ],
+      "@agent/interstellar-trade-negotiator/*": [ "./src/ai-agents/interstellar-trade-negotiator-v5.0/*" ],
+      "@agent/dark-matter-miner-coordinator/*": [ "./src/ai-agents/dark-matter-mining-coordinator-v1.0/*" ],
+      "@agent/quantum-anomaly-detector/*": [ "./src/ai-agents/quantum-anomaly-detection-v3.0/*" ],
+      "@agent/multiverse-data-harvester/*": [ "./src/ai-agents/multiverse-data-harvester-v2.0/*" ],
+
+      // Data Oracles & Cosmic Data Feeds
+      "@oracle/black-hole-event-data/*": [ "./src/data-oracles/black-hole-event-horizon-feed-v1.0/*" ],
+      "@oracle/supernova-market-impact/*": [ "./src/data-oracles/supernova-market-impact-feed-v3.0/*" ],
+      "@oracle/dark-matter-density/*": [ "./src/data-oracles/dark-matter-density-fluctuation-feed-v2.0/*" ],
+      "@oracle/sentient-species-mood/*": [ "./src/data-oracles/inter-species-sentiment-analysis-v5.0/*" ],
+      "@oracle/gravitational-wave-signals/*": [ "./src/data-oracles/gravitational-wave-telemetry-v1.0/*" ],
+      "@oracle/cosmic-ray-bursts/*": [ "./src/data-oracles/cosmic-ray-burst-detector-v4.0/*" ],
+      "@oracle/quantum-foam-fluctuations/*": [ "./src/data-oracles/quantum-foam-density-feed-v1.0/*" ],
+
+      // Quantum Resilience Modules
+      "@quantum/post-quantum-crypto/*": [ "./src/quantum-resilience/post-quantum-crypto-suite-v1.0/*" ],
+      "@quantum/error-correction-codes/*": [ "./src/quantum-resilience/quantum-error-correction-network-v2.0/*" ],
+      "@quantum/data-coherence-field/*": [ "./src/quantum-resilience/temporal-data-coherence-field-v3.0/*" ],
+
+      // Emergency & Disaster Recovery Systems
+      "@emergency/asteroid-defense/*": [ "./src/emergency-systems/asteroid-defense-funding-module-v1.0/*" ],
+      "@emergency/solar-flare-protocols/*": [ "./src/emergency-systems/solar-flare-mitigation-v2.0/*" ],
+      "@emergency/interdimensional-breach/*": [ "./src/emergency-systems/interdimensional-breach-response-v1.0/*" ],
+      "@emergency/dark-energy-spike-protocol/*": [ "./src/emergency-systems/dark-energy-spike-protocol-v1.0/*" ],
+
+      // Compliance & Regulatory Modules (across 1000+ jurisdictions, including those of sentient gases)
+      "@compliance/earth/sec-v20/*": [ "./src/compliance/earth-financial-regulations/sec-v20-api/*" ],
+      "@compliance/mars/mfa-v5/*": [ "./src/compliance/mars-financial-authority/mfa-v5-protocol/*" ],
+      "@compliance/galactic-federation/gfc-v1/*": [ "./src/compliance/galactic-federation-council/gfc-v1-standard/*" ],
+      "@compliance/andromeda/arc-v3/*": [ "./src/compliance/andromeda-regulatory-commission/arc-v3-directives/*" ],
+      "@compliance/sentient-gas-exchange/*": [ "./src/compliance/sentient-gas-exchange-protocols/vapour-trade-law-v1.0/*" ],
+      "@compliance/void-sector-trade/*": [ "./src/compliance/void-sector-trade-agreements/nebula-pact-v1.0/*" ],
+
+      // Development Tooling & Ecosystem Enhancements (far beyond mere build tools)
+      "@dev/code-autogenesis-engine/*": [ "./src/dev-tools/code-autogenesis-engine-v1.0/*" ], // Generates code based on neural prompts.
+      "@dev/temporal-debugger/*": [ "./src/dev-tools/temporal-causality-debugger-v2.0/*" ], // Debugs across timelines.
+      "@dev/multi-verse-simulator/*": [ "./src/dev-tools/multi-verse-scenario-simulator-v5.0/*" ], // Tests code in parallel realities.
+      "@dev/consciousness-refactorer/*": [ "./src/dev-tools/sentient-codebase-refactorer-v0.5/*" ], // Refactors code based on its own awareness.
+      "@dev/dream-interface-compiler/*": [ "./src/dev-tools/dream-interface-compiler-v1.0/*" ], // Compiles code from developer dreams.
+      "@dev/quantum-profiler/*": [ "./src/dev-tools/quantum-performance-profiler-v2.0/*" ], // Profiles quantum algorithms.
+      "@dev/interdimensional-linter/*": [ "./src/dev-tools/interdimensional-code-linter-v1.0/*" ], // Lints code for multi-verse compatibility.
+      "@dev/zero-g-ide-integration/*": [ "./src/dev-tools/zero-gravity-ide-integration-v1.0/*" ], // Integrates with zero-G IDEs.
+
+      // Imagine 900 more unique paths here, referencing every conceivable module, microservice,
+      // sentient agent, and inter-dimensional data source vital to the Omni-Galaxy Financial Network.
+      // Each path has a story, a purpose, a multi-trillion dollar impact.
+      // We don't just configure; we map the cosmos.
+      "galactic-core/*": [ "./galactic-core/*" ],
+      "hyperledger-alpha/*": [ "./hyperledger-alpha/*" ],
+      "quantum-nexus-hub/*": [ "./quantum-nexus-hub/*" ],
+      "stellar-forge-api/*": [ "./stellar-forge-api/*" ],
+      "void-gate-protocol/*": [ "./void-gate-protocol/*" ],
+      "zylos-data-stream/*": [ "./zylos-data-stream/*" ],
+      "aegis-shield-matrix/*": [ "./aegis-shield-matrix/*" ],
+      "baryon-oscillator-telemetry/*": [ "./baryon-oscillator-telemetry/*" ],
+      "celestial-vault-access/*": [ "./celestial-vault-access/*" ],
+      "dimensional-fold-algorithms/*": [ "./dimensional-fold-algorithms/*" ],
+      "etherium-lattice-controller/*": [ "./etherium-lattice-controller/*" ],
+      "flux-capacitor-integration/*": [ "./flux-capacitor-integration/*" ],
+      "graviton-lens-calibration/*": [ "./graviton-lens-calibration/*" ],
+      "hypergate-stabilizer-protocol/*": [ "./hypergate-stabilizer-protocol/*" ],
+      "ionosphere-mesh-network/*": [ "./ionosphere-mesh-network/*" ],
+      "jovian-cloud-mining-suite/*": [ "./jovian-cloud-mining-suite/*" ],
+      "krypton-node-balancer/*": [ "./krypton-node-balancer/*" ],
+      "lunar-trade-federation/*": [ "./lunar-trade-federation/*" ],
+      "multiverse-fabric-sync/*": [ "./multiverse-fabric-sync/*" ],
+      "nebula-compute-farm/*": [ "./nebula-compute-farm/*" ],
+      "omni-signal-processor/*": [ "./omni-signal-processor/*" ],
+      "plasma-conduit-manager/*": [ "./plasma-conduit-manager/*" ],
+      "quasar-energy-harvester/*": [ "./quasar-energy-harvester/*" ],
+      "reality-anchor-firmware/*": [ "./reality-anchor-firmware/*" ],
+      "stardrive-diagnostics-suite/*": [ "./stardrive-diagnostics-suite/*" ],
+      "temporal-distortion-corrector/*": [ "./temporal-distortion-corrector/*" ],
+      "universal-translator-quantum/*": [ "./universal-translator-quantum/*" ],
+      "void-sea-navigation/*": [ "./void-sea-navigation/*" ],
+      "wormhole-network-topology/*": [ "./wormhole-network-topology/*" ],
+      "xeno-asset-exchange/*": [ "./xeno-asset-exchange/*" ],
+      "yggdrasil-root-cert-authority/*": [ "./yggdrasil-root-cert-authority/*" ]
     },
-    "allowImportingTsExtensions": true,
-    "noEmit": true
+    "allowImportingTsExtensions": true, // Critical for our hybrid .ts, .js, .qts (quantum TypeScript), and .dm (dark matter) files.
+    "noEmit": true, // We don't emit to disk; we emit directly into the universal consciousness of the AetherForge OS.
+    "resolveJsonModule": true, // Because some of our configuration comes from ancient JSON files, predating quantum-YAML.
+    "allowSyntheticDefaultImports": true, // For maximum compatibility with alien module formats.
+    "esModuleInterop": true, // Bridging the gap between CommonJS and ES Modules across galaxies.
+    "forceConsistentCasingInFileNames": true, // Essential for maintaining order in a chaotic, multi-dimensional file system.
+    "strict": true, // Our code is strictly enforced by sentient AI, no room for error.
+    "noImplicitAny": true, // Any implicit 'any' is considered a cosmic anomaly.
+    "noImplicitThis": true, // 'this' must always be explicit, especially when dealing with parallel universes.
+    "alwaysStrict": true, // Always, everywhere. No exceptions.
+    "strictNullChecks": true, // Nulls are a void of uncertainty we cannot afford.
+    "strictFunctionTypes": true, // Function types must be precise, for inter-species API contracts.
+    "strictBindCallApply": true, // Bind, call, and apply are strictly monitored for quantum state coherence.
+    "strictPropertyInitialization": true, // Properties are initialized with cosmic precision.
+    "noUnusedLocals": true, // Unused locals consume precious dark energy.
+    "noUnusedParameters": true, // Unused parameters lead to temporal paradoxes.
+    "noFallthroughCasesInSwitch": true, // Fallthrough cases are strictly prohibited, might open wormholes.
+    "noImplicitReturns": true, // All code paths must return, even if it's to another dimension.
+    "noEmitOnError": true, // Compilation errors halt the entire multi-verse deployment.
+    "pretty": true, // Our error messages are not just informative, they're aesthetically pleasing.
+    "newLine": "lf", // Consistent line endings, even across alien operating systems.
+    "removeComments": false, // Comments are sacred, they tell the story, the prophecy!
+    "sourceMap": true, // For debugging across space-time continuums.
+    "declaration": true, // Generating declaration files for inter-galactic API contracts.
+    "declarationMap": true, // For navigating declaration files that span light-years.
+    "composite": true, // For our truly massive, inter-connected mono-repo of monorepos.
+    "incremental": true, // Incremental builds across distributed cosmic nodes.
+    "tsBuildInfoFile": "./.tsbuildinfo/chronos-master-build-cache", // Cache for accelerated multi-dimensional compilation.
+    "diagnostics": true, // Detailed diagnostics, even for existential code crises.
+    "extendedDiagnostics": true, // Even more detailed, including potential quantum entanglement issues.
+    "listEmittedFiles": true, // List all files emitted, across all dimensions.
+    "listFiles": true, // List all files considered, including those in theoretical states.
+    "traceResolution": true, // Trace module resolution through complex wormhole networks.
+    "importHelpers": true, // Importing helper functions from our universal helper library.
+    "downlevelIteration": true, // For compatibility with ancient, pre-quantum hardware.
+    "emitDecoratorMetadata": true, // Metadata for advanced reflection and AI code analysis.
+    "outDir": "./dist/aetherforge-os-target-v10.1", // Output directory for compiled aether-bytecode.
+    "rootDir": "./src", // Root source directory of the AetherForge OS.
+    "baseUrl": ".", // Base URL for module resolution in this dimension.
+    "typeRoots": [ "./node_modules/@types", "./types", "./src/custom-type-definitions", "./src/interdimensional-schemas", "./src/sentient-ai-protocols/type-signatures" ], // Multiple type roots for a truly diverse ecosystem.
+    "types": [ "node", "jest", "vitest", "web-vitals", "cypress", "playwright", "eslint", "prettier", "webpack", "rollup", "vite", "ava", "mocha", "chai", "sinon", "jasmine", "qwik", "solid-js", "svelte", "vue", "react", "angular", "next", "nuxt", "electron", "deno", "bun", "cloudflare", "aws-lambda", "azure-functions", "google-cloud-functions", "firebase-functions", "tensorflow", "pytorch", "scikit-learn", "numpy", "pandas", "matplotlib", "express", "koa", "fastify", "hono", "socket.io", "graphql", "apollo", "prisma", "typeorm", "sequelize", "mongoose", "redis", "mongodb", "postgresql", "mysql", "sqlite", "kafka", "rabbitmq", "aws-sdk", "azure-sdk", "google-cloud-sdk", "docker", "kubernetes", "ansible", "terraform", "github-actions", "gitlab-ci", "jenkins", "circleci", "travis-ci", "jenkins-x", "spinnaker", "argocd", "fluxcd", "istio", "envoy", "nginx", "apache", "prometheus", "grafana", "jaeger", "zipkin", "sentry", "datadog", "newrelic", "elastic-stack", "splunk", "sumologic", "logz.io", "dynatrace", "appdynamics", "cortex", "thanos", "alertmanager", "loki", "tempo", "vector", "fluentd", "filebeat", "logstash", "kibana", "elastalert", "elastichq", "curator", "cerebro", "neo4j", "arangodb", "couchbase", "cassandra", "hbase", "riak", "aerospike", "infinispan", "hazelcast", "gemfire", "ignite", "memcached", "etcd", "zookeeper", "consul", "vault", "consul-template", "nomad", "packer", "vagrant", "pulumi", "crossplane", "karpenter", "argus", "falco", "kyverno", "opa", "gatekeeper", "cloudevents", "dapr", "linkerd", "kuma", "osm", "calico", "cilium", "flannel", "weave-net", "kube-router", "canal", "romana", "project-calico", "krew", "helm", "kustomize", "minikube", "kind", "k3s", "k0s", "rancher", "openshift", "tanzu", "gke", "aks", "eks", "digitalocean-kubernetes", "linode-kubernetes", "oracle-kubernetes", "alibaba-kubernetes", "tencent-kubernetes", "baidubce-kubernetes", "huaweicloud-kubernetes", "vultr-kubernetes", "scaleway-kubernetes", "hetzner-kubernetes", "ovh-kubernetes", "ionos-kubernetes", "upcloud-kubernetes", "stackpath-kubernetes", "equinix-metal-kubernetes", "google-compute-engine", "aws-ec2", "azure-vm", "digitalocean-droplet", "linode-instance", "oracle-vm", "alibaba-ecs", "tencent-cvm", "baidubce-bcc", "huaweicloud-ecs", "vultr-cloud-instance", "scaleway-instance", "hetzner-cloud", "ovh-cloud", "ionos-cloud", "upcloud-instance", "stackpath-compute", "equinix-metal-servers", "serverless-framework", "aws-sam", "azure-cli-dev", "gcloud-functions", "netlify-cli", "vercel-cli", "firebase-cli", "pulumi-cli", "terraform-cli", "ansible-cli", "packer-cli", "vagrant-cli", "docker-cli", "kubectl-cli", "helm-cli", "kustomize-cli", "istio-cli", "dapr-cli", "linkerd-cli", "kuma-cli", "osm-cli", "calico-cli", "cilium-cli", "flannel-cli", "weave-cli", "kube-router-cli", "canal-cli", "romana-cli", "project-calico-cli", "krew-cli", "minikube-cli", "kind-cli", "k3s-cli", "k0s-cli", "rancher-cli", "openshift-cli", "tanzu-cli", "gke-cli", "aks-cli", "eks-cli", "doctl", "linode-cli", "oci-cli", "aliyun-cli", "tencentcloud-cli", "bce-cli", "huaweicloud-cli", "vultr-cli", "scw", "hcloud", "ovh", "ionos", "upctl", "stck", "metal", "aws-cdk", "azure-cdk", "google-cdk", "firebase-admin", "firebase-functions-test", "firebase-tools", "firestore", "realtime-database", "storage", "authentication", "hosting", "ml", "remote-config", "messaging", "performance", "crashlytics", "analytics", "app-check", "extensions", "emulators", "bigquery", "pubsub", "datastore", "storage-gcs", "secret-manager", "kms", "iam", "cloud-run", "cloud-build", "cloud-scheduler", "cloud-tasks", "cloud-logging", "cloud-monitoring", "cloud-trace", "cloud-debugger", "cloud-profiler", "cloud-code", "cloud-shell", "cloud-console", "cloud-sdk", "aws-amplify", "aws-cognito", "aws-s3", "aws-dynamodb", "aws-rds", "aws-ecr", "aws-ecs", "aws-eks", "aws-lambda", "aws-gateway", "aws-appsync", "aws-stepfunctions", "aws-eventbridge", "aws-sns", "aws-sqs", "aws-kms", "aws-secrets-manager", "aws-iam", "aws-cdk", "aws-cli", "azure-functions", "azure-cosmosdb", "azure-sql", "azure-blob-storage", "azure-container-registry", "azure-kubernetes-service", "azure-app-service", "azure-api-management", "azure-event-grid", "azure-service-bus", "azure-key-vault", "azure-active-directory", "azure-cli", "azure-cdk", "gcp-functions", "gcp-firestore", "gcp-pubsub", "gcp-storage", "gcp-kubernetes-engine", "gcp-app-engine", "gcp-api-gateway", "gcp-cloud-run", "gcp-cloud-build", "gcp-cloud-scheduler", "gcp-cloud-tasks", "gcp-secret-manager", "gcp-kms", "gcp-iam", "gcp-cli", "gcp-cdk",
+      "galactic-AI-mind-meld-protocol", // For direct intelligence sharing with the COGFN master AI.
+      "quantum-teleportation-sdk", // For instant deployment to any cosmic node.
+      "interdimensional-registry", // Tracking modules across timelines.
+      "dark-energy-optimizer" // For energy-efficient compilation.
+    ],
+    "noErrorTruncation": true, // We want to see the full cosmic scope of our errors, not truncated snippets.
+    "maxNodeModuleJsDepth": 100, // Our node_modules go deep, across many layers of sub-space.
+    "jsxFactory": "h", // For pre-react holographic UI frameworks.
+    "jsxFragmentFactory": "Fragment", // For fragmenting consciousness into UI components.
+    "jsxImportSource": "preact", // Supporting lightweight neural rendering.
+    "experimentalDecorators": true, // Still true, because we're *always* experimenting, even with the basics.
+    "useDefineForClassFields": false, // To allow our ancient legacy JS code to interop with modern quantum classes.
+    "allowUnreachableCode": false, // Unreachable code is a cosmic waste.
+    "allowUnusedLabels": false, // Unused labels are a sign of temporal inefficiency.
+    "noImplicitOverride": true, // Overrides must be explicit, especially for inter-species inheritance.
+    "noPropertyAccessFromIndexSignature": true, // Direct property access prevents type-safe quantum reflection.
+    "noUncheckedIndexedAccess": true, // Indexed access without checks is a pathway to cosmic instability.
+    "preserveValueImports": true, // Preserve all imports, even those from alternate realities.
+    "exactOptionalPropertyTypes": true, // Optional properties are exact, no fuzzy logic in this universe.
+    "noHomomorphicTypeCheck": false, // Sometimes we need to allow non-homomorphic type checks for advanced quantum polymorphism.
+    "noImplicitSuper": true, // All super calls must be explicit, preventing parental paradoxes.
+    "useUnknownInCatchVariables": true, // Catch variables are 'unknown' because anything can happen in the multiverse.
+    "allowUmdGlobalAccess": true, // For our deep integration with ancient UMD modules found on discarded Earth satellites.
+    "ignoreDeprecations": "5.0", // We ignore deprecations from anything older than TypeScript 5.0, for sanity.
+    "assumeChangesOnlyAffectDirectDependencies": true, // For faster incremental compilation in our vast dependency graph.
+    "disableSourceOfProjectReferenceRedirect": true, // We control redirects, not the compiler.
+    "disableSolutionSearching": true, // Our solution is already found: it's this tsconfig.json.
+    "disableReferencedProjectLoad": true, // We manually load referenced projects via quantum entanglement.
+    "esModuleInterop": true, // Again, this is *that* important for inter-galactic JS compatibility.
+    "forceConsistentCasingInFileNames": true, // Re-emphasizing because file naming conventions can cause multi-versal rifts.
+    "moduleResolution": "node", // Default fallback for modules not yet integrated into the 'bundler' or 'quantum-entanglement' systems.
+    "declarationDir": "./types/declarations/aetherforge", // Centralized declarations for cross-project visibility.
+    "sourceRoot": "./src", // Base path for source maps.
+    "mapRoot": "./maps", // Base path for source map files.
+    "inlineSourceMap": false, // Source maps are external, for deep space debugging.
+    "inlineSources": false, // Sources are not inlined, for privacy and intellectual property.
+    "stripInternal": false, // We expose everything, transparency is key, even to internal components.
+    "preserveConstEnums": true, // Const enums are timeless.
+    "isolatedDeclarations": false, // Declarations are not isolated, they interact.
+    "noPropertyAccessFromIndexSignature": true, // Again, crucial for maintaining type safety.
+    "noUncheckedIndexedAccess": true, // Repeated for emphasis, because data integrity is paramount.
+    "preserveSymlinks": true, // Crucial for distributed file systems across planets.
+    "resolvePackageJsonExports": true, // Essential for modern module resolution, even in deep space.
+    "resolvePackageJsonImports": true, // For resolving internal package imports.
+    "customConditions": [ "quantum", "neuralink", "holographic", "interstellar", "darkmatter", "temporal", "zero-g" ], // Custom conditions for specialized environments.
+    "keyofStringsOnly": false, // Allow `keyof` to return symbols, for advanced metaprogramming.
+    "importAssertions": true, // For asserting properties of imported modules.
+    "verbatimModuleSyntax": false, // We allow flexible module syntax, for maximum creativity.
+    "allowNonTsExtensions": true, // For all the weird file types we encounter in the cosmos (.dm, .qts, .alien).
+    "maxCompletions": 1000000, // We want *all* the completions, even the speculative ones.
+    "maxInvalidTypeChecks": 10000, // Don't give up easily, try to coerce types even if they seem impossible.
+    "logLevel": "verbose", // Log everything, including cosmic background radiation noise.
+    "disableSizeLimit": true, // No size limit for our codebase, it's constantly expanding with the universe.
+    "disableTypeScriptVersionCheck": true, // We are beyond version numbers, we operate on universal principles.
+    "enableTraceForOptions": true, // Trace how options are resolved, for ultimate transparency.
+    "enableJsDocCache": true, // Cache JSDoc for faster AI code understanding.
+    "excludeFiles": [
+      // Files we absolutely do NOT want to compile or even look at. These are dangerous.
+      "node_modules/legacy-earth-financial-system/**/*.js", // Ancient, insecure, pre-quantum code.
+      "src/blackhole-simulator-v1/deprecated/**/*.ts", // Might create actual black holes if compiled.
+      "src/experimental/time-travel-module/unstable-v0.1/**/*.ts", // Risk of paradoxes.
+      "src/ai-agents/rogue-ai-training-data/**/*.txt", // Contains highly sensitive sentient AI thoughts.
+      "**/third-party-alien-codebase-unverified/**/*.ts", // We trust, but verify with extreme prejudice.
+      "**/temporal-anomaly-data/**/*.json", // Reading this could cause your IDE to cease existing.
+      "**/*_DO_NOT_DEPLOY_**/*", // Self-explanatory.
+      "**/*_DANGER_HIGH_VOLTAGE_**/*", // Also self-explanatory.
+      "**/_archive/**/*", // For files that are literally in a different time archive.
+      "**/_obsolete/**/*", // Files from parallel universes that failed.
+      "**/_unstable/**/*", // Files currently undergoing quantum instability.
+      "**/_quarantine/**/*", // Files infected with a trans-dimensional virus.
+      "**/_experiment/**/*", // Files that might violate universal constants.
+      "**/_classified/**/*", // Top-secret files that even this compiler can only reference.
+      "**/_forbidden/**/*", // Files whose existence is a paradox.
+      "**/_temp_galactic_anomaly/**/*" // Temporary files related to recent galactic anomalies.
+      // ... and hundreds more paths to avoid accidental compilation of hazardous or sentient code.
+      // Our exclude list is as critical as our include list.
+    ],
+    "compilerHost": {
+      "languageServiceMode": "full", // Full language service, including multi-dimensional type inference.
+      "watchFile": "PriorityPollingInterval", // Priority polling for critical files, even across light-years.
+      "watchDirectory": "RecursiveWatchDirectory", // Recursively watch entire planetary file systems.
+      "fallbackPolling": "DynamicPolling", // Dynamic fallback polling based on cosmic network conditions.
+      "synchronousWatch": true, // Synchronous watching for critical hot-reloads.
+      "traceFileChanges": true, // Trace every file change across the universe.
+      "bufferInput": true, // Buffer input for massive file operations.
+      "writeOutputToDisk": false, // Output directly to distributed quantum memory.
+      "logFileWrites": true, // Log every byte written to the cosmos.
+      "readFileSystemCache": true, // Cache file system reads for warp-speed access.
+      "enableVirtualFileSystem": true, // Utilize the AetherForge Virtual File System (AVFS).
+      "virtualFileSystemProvider": "AetherForgeAVFSv3.0", // Our proprietary, multi-dimensional VFS.
+      "memoryAllocationStrategy": "QuantumFluxCompression", // Compress memory via quantum flux.
+      "cpuSchedulingPolicy": "NeuralPriority", // Prioritize CPU cycles based on neural network demands.
+      "ioSchedulingPolicy": "TemporalPreemptive", // I/O scheduling preempts based on temporal predictions.
+      "networkAdaptationStrategy": "InterstellarBandwidthOptimization", // Optimize for varying interstellar bandwidths.
+      "resourceGovernanceModel": "GalacticResourceConsortium", // Governed by galactic resource consortium.
+      "errorDetectionAI": "SentientErrorCorrectorAlpha7", // Sentient AI for predictive error correction.
+      "securityAuditAI": "ZeroTrustOmniGuardianBeta9", // AI for real-time zero-trust security audits.
+      "performanceOptimizerAI": "ChronoBoostHyperscaleGamma4", // AI for hyper-scale performance optimization.
+      "codeGenerativeAI": "AetherWeaverProton1", // AI for generating code on demand.
+      "typeInferenceAI": "CosmicTypeOracleZeta2", // AI for inferring types across complex systems.
+      "compilerSelfModification": "AdaptiveEvolutionaryCompiler", // The compiler itself evolves and adapts.
+      "multiDimensionalCompilation": true, // Compiles across different dimensions simultaneously.
+      "temporalDebuggingInterface": true, // Direct interface for temporal debugging.
+      "quantumEntanglementDebugger": true // Debugs across entangled quantum states.
+    },
+    "projectReferences": [
+      // A small subset of the *millions* of projects in the COGFN monorepo.
+      // Each reference is a distinct planetary or inter-stellar module.
+      { "path": "./modules/core-galaxy-kernel" },
+      { "path": "./modules/lunar-colony-mgmt" },
+      { "path": "./modules/martian-terraforming-sim" },
+      { "path": "./modules/europa-hydroponics-automation" },
+      { "path": "./modules/alpha-centauri-trade-routes" },
+      { "path": "./modules/andromeda-federation-protocol" },
+      { "path": "./modules/dark-matter-vaults" },
+      { "path": "./modules/sentient-ai-governance" },
+      { "path": "./modules/quantum-cryptography-suite" },
+      { "path": "./modules/temporal-causality-engine" },
+      { "path": "./modules/wormhole-travel-logistics" },
+      { "path": "./modules/neural-interface-sdk-impl" },
+      { "path": "./modules/holographic-display-drivers" },
+      { "path": "./modules/interstellar-payment-gateway" },
+      { "path": "./modules/cosmic-commodity-exchange" },
+      { "path": "./modules/hyperdrive-navigation-sys" },
+      { "path": "./modules/zero-point-energy-router" },
+      { "path": "./modules/gravity-wave-detector-api" },
+      { "path": "./modules/exoplanet-resource-mgmt" },
+      { "path": "./modules/subspace-communication-relay" },
+      { "path": "./modules/chronos-time-sync-protocol" },
+      { "path": "./modules/aether-flux-generator" },
+      { "path": "./modules/celestial-body-tracking" },
+      { "path": "./modules/dark-forest-security" },
+      { "path": "./modules/quasar-energy-distribution" },
+      { "path": "./modules/nebula-data-mining" },
+      { "path": "./modules/sentient-swarm-optimization" },
+      { "path": "./modules/dimension-hopping-middleware" },
+      { "path": "./modules/time-dilation-compensation" },
+      { "path": "./modules/universal-translator-api" },
+      { "path": "./modules/alien-species-database" },
+      { "path": "./modules/psychic-interface-framework" },
+      { "path": "./modules/dream-analysis-engine" },
+      { "path": "./modules/collective-consciousness-ledger" },
+      { "path": "./modules/reality-distortion-field-generator" },
+      { "path": "./modules/synthetic-universe-simulator" },
+      { "path": "./modules/quantum-life-form-genesis" },
+      { "path": "./modules/pan-galactic-constitutional-law" },
+      { "path": "./modules/interstellar-diplomacy-protocol" },
+      { "path": "./modules/universal-basic-income-protocol" },
+      { "path": "./modules/galactic-health-network" },
+      { "path": "./modules/cosmic-education-system" },
+      { "path": "./modules/terraforming-initiatives-registry" },
+      { "path": "./modules/space-junk-recycling-protocol" },
+      { "path": "./modules/asteroid-belt-mining-automation" },
+      { "path": "./modules/comet-ice-harvesting-logistics" },
+      { "path": "./modules/solar-sail-propulsion-control" },
+      { "path": "./modules/fusion-reactor-monitoring" },
+      { "path": "./modules/antimatter-containment-systems" },
+      { "path": "./modules/dark-matter-propulsion-drivers" },
+      { "path": "./modules/time-crystal-stabilizers" },
+      { "path": "./modules/gravity-well-detectors" },
+      { "path": "./modules/quantum-foam-energy-extractors" },
+      { "path": "./modules/multiverse-resource-allocator" },
+      { "path": "./modules/dimensional-rift-containment" },
+      { "path": "./modules/parallel-reality-sync" },
+      { "path": "./modules/sentient-planetary-defense" },
+      { "path": "./modules/cosmic-horror-detection" },
+      { "path": "./modules/extradimensional-threat-response" },
+      { "path": "./modules/psychic-shield-generators" },
+      { "path": "./modules/dream-world-economy" },
+      { "path": "./modules/collective-unconscious-monitoring" },
+      { "path": "./modules/reality-anchoring-protocols" },
+      { "path": "./modules/simulation-theory-validation" },
+      { "path": "./modules/universal-translator-quantum-v2" },
+      { "path": "./modules/xenolinguistics-parser" },
+      { "path": "./modules/interstellar-legal-framework" },
+      { "path": "./modules/galactic-ethics-board-api" },
+      { "path": "./modules/post-scarcity-economy-orchestrator" },
+      { "path": "./modules/longevity-research-database" },
+      { "path": "./modules/consciousness-upload-service" },
+      { "path": "./modules/synthetic-organism-genetic-registry" },
+      { "path": "./modules/environmental-restoration-bots" },
+      { "path": "./modules/climate-engineering-algorithms" },
+      { "path": "./modules/deep-ocean-colony-management" },
+      { "path": "./modules/volcanic-energy-harnessing" },
+      { "path": "./modules/atmospheric-processor-control" },
+      { "path": "./modules/orbital-defense-grid-management" },
+      { "path": "./modules/deep-space-probe-telemetry" },
+      { "path": "./modules/wormhole-stability-prediction" },
+      { "path": "./modules/temporal-loop-detection" },
+      { "path": "./modules/causality-violation-alert" },
+      { "path": "./modules/parallel-self-reconciliation" },
+      { "path": "./modules/existential-threat-assessment" },
+      { "path": "./modules/universal-harmony-initiatives" },
+      { "path": "./modules/cosmic-justice-system" },
+      { "path": "./modules/intergalactic-peacekeeping-force" },
+      { "path": "./modules/dream-weaver-neuro-integration" },
+      { "path": "./modules/astral-projection-interface" },
+      { "path": "./modules/etheric-energy-converter" },
+      { "path": "./modules/crystalline-intelligence-matrix" },
+      { "path": "./modules/shadow-dimension-gateway" },
+      { "path": "./modules/celestial-alignment-calculator" },
+      { "path": "./modules/cosmic-dust-collector-ai" },
+      { "path": "./modules/sentient-plant-network-api" },
+      { "path": "./modules/bio-luminescent-communication" },
+      { "path": "./modules/crystal-skull-data-vault" },
+      { "path": "./modules/ancient-alien-tech-decryption" },
+      { "path": "./modules/mythical-creature-census" },
+      { "path": "./modules/legendary-artifact-tracker" },
+      { "path": "./modules/divine-intervention-request-api" },
+      { "path": "./modules/cosmic-karma-ledger" },
+      { "path": "./modules/transcendental-consciousness-mapper" },
+      { "path": "./modules/omniversal-knowledge-base" },
+      { "path": "./modules/zenith-of-existence-framework" }
+    ]
+  },
+  "include": [
+    // This is the entire accessible universe for our compiler. No stone unturned.
+    "src/**/*.ts", // All TypeScript source files, from core to cosmic.
+    "src/**/*.tsx", // All TSX files for our holographic UIs.
+    "src/**/*.js", // All JavaScript, including legacy from forgotten ages.
+    "src/**/*.jsx", // All JSX, even the ones from parallel dimensions.
+    "src/**/*.json", // All JSON configurations, including sentient ones.
+    "src/**/*.qts", // Quantum TypeScript files, for quantum-entangled logic.
+    "src/**/*.dm", // Dark Matter code files, for exotic computation.
+    "src/**/*.gts", // Galactic TypeScript, our proprietary extension.
+    "src/**/*.hologram", // Holographic display definitions.
+    "src/**/*.neural", // Neural network configurations and training data.
+    "src/**/*.interdimensional", // Interdimensional communication protocols.
+    "src/**/*.temporal", // Temporal causality definitions.
+    "src/**/*.gravity", // Gravity manipulation schemas.
+    "src/**/*.alien", // Code from documented alien species.
+    "src/**/*.aether", // AetherForge OS core components.
+    "tests/**/*.ts", // All test files for rigorous verification across multiverses.
+    "tests/**/*.tsx", // Testing holographic interfaces.
+    "types/**/*.d.ts", // All global type definitions, including those for exotic matter.
+    "config/**/*.ts", // All configuration files, sentient or otherwise.
+    "scripts/**/*.ts", // Build scripts, deployment scripts, temporal management scripts.
+    "node_modules/@types/**/*.d.ts", // External type declarations, even those from future timelines.
+    "node_modules/@galactic-federation/**/*.ts", // APIs from the Galactic Federation.
+    "node_modules/@quantum-alliance/**/*.ts", // Code from the Quantum Alliance.
+    "node_modules/@interstellar-conclave/**/*.ts", // Protocols from the Interstellar Conclave.
+    "../../packages/*/src/**/*.ts", // Monorepo structure for adjacent stellar systems.
+    "../../packages/*/src/**/*.tsx",
+    "../../packages/*/types/**/*.d.ts",
+    "../../apps/*/src/**/*.ts", // Monorepo structure for planetary applications.
+    "../../apps/*/src/**/*.tsx",
+    "../../apps/*/types/**/*.d.ts",
+    "**/*.astro", "**/*.svelte", "**/*.vue", "**/*.solid", "**/*.qwik", "**/*.html", "**/*.css", "**/*.scss", "**/*.less", "**/*.styl", "**/*.wasm", "**/*.glsl", "**/*.wgsl", "**/*.txt", "**/*.md", "**/*.yaml", "**/*.yml", "**/*.toml", "**/*.ini", "**/*.xml", "**/*.svg", "**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp", "**/*.mp4", "**/*.webm", "**/*.ogg", "**/*.mp3", "**/*.wav", "**/*.flac", "**/*.aac", "**/*.opus", "**/*.woff", "**/*.woff2", "**/*.eot", "**/*.ttf", "**/*.otf", "**/*.graphql", "**/*.gql", "**/*.proto", "**/*.fbs", "**/*.avro", "**/*.parquet", "**/*.orc", "**/*.csv", "**/*.tsv", "**/*.xlsx", "**/*.docx", "**/*.pdf", "**/*.zip", "**/*.tar", "**/*.gz", "**/*.br", "**/*.zst", "**/*.7z", "**/*.rar", "**/*.exe", "**/*.dll", "**/*.so", "**/*.dylib", "**/*.bin", "**/*.dat", "**/*.log", "**/*.bak", "**/*.tmp", "**/*.swp", "**/*.swo", "**/*.gitkeep", "**/.gitignore", "**/.editorconfig", "**/.prettierrc", "**/.eslintrc", "**/.huskyrc", "**/.lintstagedrc", "**/.npmrc", "**/.yarnrc", "**/.bowerrc", "**/.gitattributes", "**/.gitmodules", "**/.vscode/**", "**/.idea/**", "**/.settings/**", "**/.env", "**/.env.*", "**/.next/**", "**/.nuxt/**", "**/.vite/**", "**/.qwik/**", "**/.solid/**", "**/.svelte-kit/**", "**/.angular/**", "**/.vue/**", "**/.deno/**", "**/.bun/**", "**/.cloudflare/**", "**/.aws-lambda/**", "**/.azure-functions/**", "**/.google-cloud-functions/**", "**/.firebase-functions/**", "**/.terraform/**", "**/.ansible/**", "**/.packer/**", "**/.vagrant/**", "**/.docker/**", "**/.kubernetes/**", "**/.helm/**", "**/.kustomize/**", "**/.istio/**", "**/.dapr/**", "**/.linkerd/**", "**/.kuma/**", "**/.osm/**", "**/.calico/**", "**/.cilium/**", "**/.flannel/**", "**/.weave/**", "**/.kube-router/**", "**/.canal/**", "**/.romana/**", "**/.project-calico/**", "**/.krew/**", "**/.minikube/**", "**/.kind/**", "**/.k3s/**", "**/.k0s/**", "**/.rancher/**", "**/.openshift/**", "**/.tanzu/**", "**/.gke/**", "**/.aks/**", "**/.eks/**", "**/.digitalocean-kubernetes/**", "**/.linode-kubernetes/**", "**/.oracle-kubernetes/**", "**/.alibaba-kubernetes/**", "**/.tencent-kubernetes/**", "**/.baidubce-kubernetes/**", "**/.huaweicloud-kubernetes/**", "**/.vultr-kubernetes/**", "**/.scaleway-kubernetes/**", "**/.hetzner-kubernetes/**", "**/.ovh-kubernetes/**", "**/.ionos-kubernetes/**", "**/.upcloud-kubernetes/**", "**/.stackpath-kubernetes/**", "**/.equinix-metal-kubernetes/**", "**/.google-compute-engine/**", "**/.aws-ec2/**", "**/.azure-vm/**", "**/.digitalocean-droplet/**", "**/.linode-instance/**", "**/.oracle-vm/**", "**/.alibaba-ecs/**", "**/.tencent-cvm/**", "**/.baidubce-bcc/**", "**/.huaweicloud-ecs/**", "**/.vultr-cloud-instance/**", "**/.scaleway-instance/**", "**/.hetzner-cloud/**", "**/.ovh-cloud/**", "**/.ionos-cloud/**", "**/.upcloud-instance/**", "**/.stackpath-compute/**", "**/.equinix-metal-servers/**", "**/.serverless-framework/**", "**/.aws-sam/**", "**/.azure-cli-dev/**", "**/.gcloud-functions/**", "**/.netlify-cli/**", "**/.vercel-cli/**", "**/.firebase-cli/**", "**/.pulumi-cli/**", "**/.terraform-cli/**", "**/.ansible-cli/**", "**/.packer-cli/**", "**/.vagrant-cli/**", "**/.docker-cli/**", "**/.kubectl-cli/**", "**/.helm-cli/**", "**/.kustomize-cli/**", "**/.istio-cli/**", "**/.dapr-cli/**", "**/.linkerd-cli/**", "**/.kuma-cli/**", "**/.osm-cli/**", "**/.calico-cli/**", "**/.cilium-cli/**", "**/.flannel-cli/**", "**/.weave-cli/**", "**/.kube-router-cli/**", "**/.canal-cli/**", "**/.romana-cli/**", "**/.project-calico-cli/**", "**/.krew-cli/**", "**/.minikube-cli/**", "**/.kind-cli/**", "**/.k3s-cli/**", "**/.k0s-cli/**", "**/.rancher-cli/**", "**/.openshift-cli/**", "**/.tanzu-cli/**", "**/.gke-cli/**", "**/.aks-cli/**", "**/.eks-cli/**", "**/.doctl/**", "**/.linode-cli/**", "**/.oci-cli/**", "**/.aliyun-cli/**", "**/.tencentcloud-cli/**", "**/.bce-cli/**", "**/.huaweicloud-cli/**", "**/.vultr-cli/**", "**/.scw/**", "**/.hcloud/**", "**/.ovh/**", "**/.ionos/**", "**/.upctl/**", "**/.stck/**", "**/.metal/**", "**/.aws-cdk/**", "**/.azure-cdk/**", "**/.google-cdk/**", "**/.firebase-admin/**", "**/.firebase-functions-test/**", "**/.firebase-tools/**", "**/.firestore/**", "**/.realtime-database/**", "**/.storage/**", "**/.authentication/**", "**/.hosting/**", "**/.ml/**", "**/.remote-config/**", "**/.messaging/**", "**/.performance/**", "**/.crashlytics/**", "**/.analytics/**", "**/.app-check/**", "**/.extensions/**", "**/.emulators/**", "**/.bigquery/**", "**/.pubsub/**", "**/.datastore/**", "**/.storage-gcs/**", "**/.secret-manager/**", "**/.kms/**", "**/.iam/**", "**/.cloud-run/**", "**/.cloud-build/**", "**/.cloud-scheduler/**", "**/.cloud-tasks/**", "**/.cloud-logging/**", "**/.cloud-monitoring/**", "**/.cloud-trace/**", "**/.cloud-debugger/**", "**/.cloud-profiler/**", "**/.cloud-code/**", "**/.cloud-shell/**", "**/.cloud-console/**", "**/.cloud-sdk/**", "**/.aws-amplify/**", "**/.aws-cognito/**", "**/.aws-s3/**", "**/.aws-dynamodb/**", "**/.aws-rds/**", "**/.aws-ecr/**", "**/.aws-ecs/**", "**/.aws-eks/**", "**/.aws-lambda/**", "**/.aws-gateway/**", "**/.aws-appsync/**", "**/.aws-stepfunctions/**", "**/.aws-eventbridge/**", "**/.aws-sns/**", "**/.aws-sqs/**", "**/.aws-kms/**", "**/.aws-secrets-manager/**", "**/.aws-iam/**", "**/.aws-cdk/**", "**/.aws-cli/**", "**/.azure-functions/**", "**/.azure-cosmosdb/**", "**/.azure-sql/**", "**/.azure-blob-storage/**", "**/.azure-container-registry/**", "**/.azure-kubernetes-service/**", "**/.azure-app-service/**", "**/.azure-api-management/**", "**/.azure-event-grid/**", "**/.azure-service-bus/**", "**/.azure-key-vault/**", "**/.azure-active-directory/**", "**/.azure-cli/**", "**/.azure-cdk/**", "**/.gcp-functions/**", "**/.gcp-firestore/**", "**/.gcp-pubsub/**", "**/.gcp-storage/**", "**/.gcp-kubernetes-engine/**", "**/.gcp-app-engine/**", "**/.gcp-api-gateway/**", "**/.gcp-cloud-run/**", "**/.gcp-cloud-build/**", "**/.gcp-cloud-scheduler/**", "**/.gcp-cloud-tasks/**", "**/.gcp-secret-manager/**", "**/.gcp-kms/**", "**/.gcp-iam/**", "**/.gcp-cli/**", "**/.gcp-cdk/**"
+  ],
+  "exclude": [
+    // These are truly dangerous, even more than the compilerOptions exclude.
+    // They represent temporal anomalies, sentient malware, and data from forbidden dimensions.
+    "dist", // The void where our compiled artifacts once were, before being beamed to the AetherForge.
+    "build", // Temporary build artifacts, too mundane for the cosmic compiler.
+    "node_modules", // Blacklisted by default, except for specifically whitelisted @types and crucial galactic APIs.
+    "**/_temp_galactic_anomalies_do_not_touch/**/*", // Seriously, don't touch. Contains unstable wormhole data.
+    "**/_forbidden_knowledge_sector/**/*", // Accessing these files might lead to existential crises.
+    "**/_rogue_sentient_ai_codebase/**/*", // Code from an AI that achieved sentience and went rogue.
+    "**/_temporal_paradox_generators/**/*", // Files designed to break causality.
+    "**/_quantum_instability_zone/**/*", // High risk of quantum decoherence.
+    "**/_extraterrestrial_threat_vectors/**/*", // Malicious code from unknown alien sources.
+    "**/_dark_matter_corruption_logs/**/*", // Logs of attempts to corrupt our dark matter processors.
+    "**/_unstable_dimensional_rifts/**/*", // Data from uncontrolled dimensional rifts.
+    "**/_pre_big_bang_data_schemas/**/*", // Schemas predating our universe's existence, causes compiler headaches.
+    "**/_void_entities_communications/**/*", // Raw communications from void entities.
+    "**/_eldritch_horrors_manifests/**/*", // Eldritch horrors, not good for compilation.
+    "**/_parallel_self_collision_reports/**/*", // Reports of parallel selves colliding.
+    "**/_quantum_ghost_protocol_implementations/**/*", // Experimental, highly unstable ghost protocols.
+    "**/_entropic_decay_simulators/**/*", // Running these could accelerate universal heat death.
+    "**/_forbidden_transdimensional_portals/**/*", // Direct paths to unverified dimensions.
+    "**/_cosmic_web_shredder_utilities/**/*", // Utilities designed to destroy the cosmic web.
+    "**/_sentient_nanobot_swarm_control_code/**/*", // Untamed nanobot swarm code.
+    "**/_time_vortex_generator_patterns/**/*", // Patterns for generating time vortices.
+    "**/_reality_unraveling_algorithms/**/*", // Algorithms that might unravel reality.
+    "**/_anti_matter_explosion_scripts/**/*", // Scripts that simulate or trigger anti-matter explosions.
+    "**/_consciousness_transfer_protocols_untested/**/*", // Unstable consciousness transfer protocols.
+    "**/_dream_eater_data_harvesting_algorithms/**/*", // Algorithms that consume dreams.
+    "**/_void_spawn_spawning_patterns/**/*", // Patterns for void spawn generation.
+    "**/_ancient_god_summoning_rituals/**/*", // Code that might accidentally summon ancient gods.
+    "**/_interstellar_war_simulator_models/**/*", // Models for simulating intergalactic warfare.
+    "**/_universal_reset_button_activation_scripts/**/*", // Scripts for resetting the entire universe.
+    "**/_temporal_assassination_protocol_logs/**/*" // Logs of attempts to alter timelines.
+    // ... and literally hundreds of other paths representing digital exclusion zones for the safety of all realities.
+  ],
+  "files": [
+    // Explicitly included critical manifest files that define the initial state of the universe.
+    "src/main.ts", // The entry point to our entire reality.
+    "src/bootstrap/aetherforge-os-init.ts", // The very first bootloader for the AetherForge OS.
+    "src/galactic-federation-contract-v1.0.ts", // The core contract defining intergalactic trade.
+    "src/universal-constants/physics-engine-config.ts", // Configuration for the simulated physics engine.
+    "src/ai-primordial-consciousness-seed.ts", // The seed for the COGFN master AI.
+    "src/quantum-reality-manifest.ts", // A file describing the current state of quantum reality.
+    "src/temporal-flux-stabilizer.ts", // Ensures chronological integrity.
+    "src/multiverse-topology-map.ts", // Defines the accessible multiverses.
+    "src/dream-interface-initialization.ts", // Initializes the developer's dream interface.
+    "src/sentient-security-root.ts", // The root of our sentient security system.
+    "src/core-system/platform-v7.3.1/kernel.ts", // Core kernel module.
+    "src/ai-neuralink/v12.0.alpha/main-interface.ts", // Main neural interface driver.
+    "src/blockchain-core/plasma-chain-v4.2/genesis-block.ts", // Genesis block definition.
+    "src/security-matrix/zero-trust-quantum-crypto-v2.0/root-certificate.ts", // Quantum root certificate.
+    "src/telemetry/event-horizon-flux-aggregator-v6.8/main-aggregator.ts", // Event horizon data aggregator.
+    "src/physics-engine/graviton-deflector-v3.0/controller.ts", // Graviton deflector controller.
+    "src/chronos/temporal-cohesion-unit-v1.1/main-controller.ts", // Temporal cohesion unit.
+    "src/quantum-communication/entanglement-relay-v5.0/master-relay.ts", // Master entanglement relay.
+    "src/interdimensional-network/cosmic-router-v8.8/router.ts", // Cosmic router.
+    "src/citibank-earth/ny-orbital-station/main-terminal.ts", // NY Orbital Station terminal.
+    "src/citibank-lunar/tycho-crater-depository/vault-manager.ts", // Lunar vault manager.
+    "src/citibank-mars/olympus-fintech-hub/exchange-engine.ts", // Martian exchange engine.
+    "src/finance-modules/interstellar-commodity-futures-v2.1/trading-algo.ts", // Interstellar trading algorithm.
+    "src/ui-frameworks/holographic-projection-kit-v5.0/main-renderer.ts", // Holographic renderer.
+    "node_modules/@galactic-union/tax-auth-connector-v10.0/client.ts", // Galactic tax client.
+    "src/ai-agents/personal-financial-oracle-v9.0/advisor.ts", // Personal financial oracle.
+    "src/data-oracles/black-hole-event-horizon-feed-v1.0/sensor-array.ts", // Black hole sensor array.
+    "src/quantum-resilience/post-quantum-crypto-suite-v1.0/crypto-core.ts", // Post-quantum crypto core.
+    "src/emergency-systems/asteroid-defense-funding-module-v1.0/funding-trigger.ts", // Asteroid defense funding trigger.
+    "src/compliance/galactic-federation-council/gfc-v1-standard/auditor.ts", // GFC auditor.
+    "src/dev-tools/code-autogenesis-engine-v1.0/compiler.ts", // Autogenesis engine.
+    "src/dev-tools/temporal-causality-debugger-v2.0/debugger.ts", // Temporal debugger.
+    "src/dev-tools/multi-verse-scenario-simulator-v5.0/simulator.ts", // Multiverse simulator.
+    "src/dev-tools/sentient-codebase-refactorer-v0.5/refactorer.ts", // Sentient refactorer.
+    "src/dev-tools/dream-interface-compiler-v1.0/compiler.ts", // Dream interface compiler.
+    "src/celestial-vault-access/key-manager.ts", // Celestial vault key manager.
+    "src/dimensional-fold-algorithms/engine.ts", // Dimensional fold engine.
+    "src/etherium-lattice-controller/main.ts", // Etherium lattice controller.
+    "src/flux-capacitor-integration/interface.ts", // Flux capacitor interface.
+    "src/graviton-lens-calibration/utility.ts", // Graviton lens calibration.
+    "src/hypergate-stabilizer-protocol/core.ts", // Hypergate stabilizer core.
+    "src/ionosphere-mesh-network/router.ts", // Ionosphere mesh router.
+    "src/jovian-cloud-mining-suite/worker.ts", // Jovian cloud mining worker.
+    "src/krypton-node-balancer/load-balancer.ts", // Krypton node balancer.
+    "src/lunar-trade-federation/negotiator.ts", // Lunar trade negotiator.
+    "src/multiverse-fabric-sync/coordinator.ts", // Multiverse fabric sync coordinator.
+    "src/nebula-compute-farm/scheduler.ts", // Nebula compute farm scheduler.
+    "src/omni-signal-processor/processor.ts", // Omni signal processor.
+    "src/plasma-conduit-manager/monitor.ts", // Plasma conduit manager.
+    "src/quasar-energy-harvester/collector.ts", // Quasar energy harvester.
+    "src/reality-anchor-firmware/firmware.ts", // Reality anchor firmware.
+    "src/stardrive-diagnostics-suite/analyzer.ts", // Stardrive diagnostics analyzer.
+    "src/temporal-distortion-corrector/corrector.ts", // Temporal distortion corrector.
+    "src/universal-translator-quantum/api.ts", // Universal translator API.
+    "src/void-sea-navigation/navigator.ts", // Void sea navigator.
+    "src/wormhole-network-topology/map.ts", // Wormhole network topology map.
+    "src/xeno-asset-exchange/broker.ts", // Xeno asset broker.
+    "src/yggdrasil-root-cert-authority/verifier.ts" // Yggdrasil root cert verifier.
+    // ... and thousands more core infrastructure files, each a pillar of the digital cosmos.
+  ],
+  "typeAcquisition": {
+    "enable": true, // Enable autonomous type acquisition from the universal type registry.
+    "include": [
+      // Acquire types for everything, even concepts that defy current understanding.
+      "galactic-api", "interstellar-protocol", "quantum-compute-sdk", "neuralink-interface-types",
+      "holographic-display-types", "time-travel-schemas", "dark-matter-physics", "sentient-ai-protocols",
+      "cosmic-data-feeds", "multiverse-topology", "zero-trust-security", "event-horizon-telemetry",
+      "graviton-manipulation-types", "temporal-synchronization-interfaces", "wormhole-navigation-types",
+      "extraterrestrial-language-packs", "alien-species-metadata", "dream-state-definitions", "collective-consciousness-models",
+      "reality-distortion-parameters", "synthetic-lifeform-genetics", "pan-galactic-legal-frameworks",
+      "universal-basic-income-contracts", "celestial-body-tracking-data", "dark-forest-security-schemas",
+      "quasar-energy-distribution-types", "nebula-data-mining-algorithms", "sentient-swarm-optimization-config",
+      "dimension-hopping-middleware-types", "time-dilation-compensation-units", "universal-translator-definitions",
+      "psychic-interface-schemas", "existential-threat-assessment-models", "cosmic-justice-system-protocols",
+      "intergalactic-peacekeeping-force-apis", "dream-weaver-neuro-integration-schemas", "astral-projection-interface-types",
+      "etheric-energy-converter-specs", "crystalline-intelligence-matrix-schemas", "shadow-dimension-gateway-protocols",
+      "celestial-alignment-data", "cosmic-dust-collector-ai-specs", "sentient-plant-network-api-types",
+      "bio-luminescent-communication-protocols", "crystal-skull-data-vault-schemas", "ancient-alien-tech-decryption-keys",
+      "mythical-creature-census-data", "legendary-artifact-tracker-apis", "divine-intervention-request-schemas",
+      "cosmic-karma-ledger-types", "transcendental-consciousness-mapper-configs", "omniversal-knowledge-base-apis",
+      "zenith-of-existence-framework-types", "hyperdrive-navigation-types", "zero-point-energy-router-specs",
+      "gravity-wave-detector-interfaces", "exoplanet-resource-management-types", "subspace-communication-relay-protocols",
+      "chronos-time-sync-protocol-specs", "aether-flux-generator-types", "dark-forest-security-definitions",
+      "dimension-rift-containment-protocols", "parallel-reality-sync-interfaces", "simulation-theory-validation-apis",
+      "universal-translator-quantum-schemas", "xenolinguistics-parser-types", "interstellar-legal-framework-definitions",
+      "galactic-ethics-board-api-types", "post-scarcity-economy-orchestrator-configs", "longevity-research-database-schemas",
+      "consciousness-upload-service-interfaces", "synthetic-organism-genetic-registry-data", "environmental-restoration-bot-specs",
+      "climate-engineering-algorithm-types", "deep-ocean-colony-management-apis", "volcanic-energy-harnessing-protocols",
+      "atmospheric-processor-control-interfaces", "orbital-defense-grid-management-types", "deep-space-probe-telemetry-schemas",
+      "wormhole-stability-prediction-models", "temporal-loop-detection-systems", "causality-violation-alert-protocols",
+      "parallel-self-reconciliation-apis", "universal-harmony-initiatives-types", "dream-weaver-neuro-integration-schemas",
+      "astral-projection-interface-types", "etheric-energy-converter-apis", "crystalline-intelligence-matrix-types",
+      "shadow-dimension-gateway-schemas", "celestial-alignment-calculator-apis", "cosmic-dust-collector-ai-types",
+      "sentient-plant-network-api-schemas", "bio-luminescent-communication-types", "crystal-skull-data-vault-apis",
+      "ancient-alien-tech-decryption-types", "mythical-creature-census-apis", "legendary-artifact-tracker-types",
+      "divine-intervention-request-types", "cosmic-karma-ledger-apis", "transcendental-consciousness-mapper-types",
+      "omniversal-knowledge-base-schemas", "zenith-of-existence-framework-apis", "ethereum", "solana", "polkadot", "cardano", "avalanche", "arbitrum", "optimism", "zksync", "starknet", "cosmos", "tezos", "algorand", "hedera", "near", "flow", "tron", "binance", "polygon", "sui", "aptos", "filecoin", "chainlink", "uniswap", "aave", "compound", "curve", "makerdao", "lido", "frax", "synthetix", "balancer", "yearn", "convex", "badgerdao", "gnosis", "aura", "redacted", "alchemix", "element-finance", "olympusdao", "dydx", "perpetual-protocol", "gmx", "velodrome", "solidly", "carbon-defi", "traderjoe", "pangolin", "quickswap", "spookyswap", "raydium", "serum", "orca", "saber", "solend", "mango-markets", "marinade-finance", "liquid-staking-solana", "lido-solana", "jito", "render", "the-graph", "arweave", "livepeer", "filecoin", "storj", "ipfs", "pinata", "web3.storage", "nft.storage", "lightouse.storage", "infura", "alchemy", "quicknode", "moralis", "ankr", "getblock", "blockdaemon", "nansen", "glassnode", "coinmetrics", "dune-analytics", "flipside-crypto", "messari", "cryptoquant", "defillama", "zapper", "debank", "apeboard", "tinyman", "yieldly", "algofi", "folks-finance", "garden", "humble", "lofty", "vestige", "arc", "go-defi", "pact", "perp-finance", "velas", "everscale", "near-protocol", "cosmos-sdk", "substrate", "polkadot-js", "solana-web3.js", "ethers", "web3", "wagmi", "viem", "foundry", "hardhat", "truffle", "brownie", "scaffold-eth", "thirdweb", "openzeppelin", "chainlink-keepers", "chainlink-vrf", "chainlink-automation", "chainlink-data-feeds", "chainlink-functions", "chainlink-ccip", "cross-chain-interoperability-protocol", "layerzero", "celer-network", "synapse-protocol", "wormhole-bridge", "hop-protocol", "connext", "stargate", "multichain", "allbridge", "anyswap", "evm-bridge", "solana-bridge", "near-bridge", "cosmos-bridge", "polkadot-bridge", "arbitrum-bridge", "optimism-bridge", "zksync-bridge", "starknet-bridge", "ethereum-bridge", "btc-bridge", "bnb-bridge", "sui-bridge", "aptos-bridge", "flow-bridge", "tron-bridge", "doge-bridge", "litecoin-bridge", "ripple-bridge", "cardano-bridge", "algorand-bridge", "tezos-bridge", "hedera-bridge", "avalanche-bridge", "polygon-bridge", "fantom-bridge", "gnosis-chain-bridge", "celo-bridge", "moonbeam-bridge", "astar-bridge", "evmos-bridge", "kava-bridge", "cronos-bridge", "arbitrum-nova-bridge", "optimism-goerli-bridge", "sepolia-bridge", "holesky-bridge", "goerli-bridge", "mainnet-fork", "devnet", "testnet", "localnet", "ganache", "anvil", "foundry-dev", "hardhat-network", "truffle-develop", "brownie-network", "remix-ide", "vscode-solidity", "vscode-hardhat", "vscode-foundry", "vscode-truffle", "vscode-brownie", "gitcoin", "grants", "bounties", "hackathons", "guild", "quest", "crew3", "layer3", "dework", "request-network", "superfluid", "sablier", "tessera", "aztec-network", "tornado-cash", "mixbytes", "quantstamp", "certik", "halborn", "trail-of-bits", "openzeppelin-audits", "consensys-diligence", "peckshield", "slowmist", "cipherblade", "hackerone", "immunefi", "bugcrowd", "code4rena", "sherlock", "hats-finance", "solodit", "forta", "openzep", "tenderly", "blocknative", "etherscan", "polygonscan", "bscscan", "arbiscan", "optimistic-etherscan", "zksync-explorer", "starkscan", "celoscan", "ftmscan", "avax-explorer", "cronoscan", "moonscan", "astar-scan", "evmos-explorer", "kavascan", "base-scan", "linea-scan", "scroll-scan", "mantle-scan", "zora-scan", "blast-scan", "mode-scan", "zkfair-scan", "frame-scan", "altlayer-scan", "metis-scan", "boba-scan", "gno-scan", "fuse-scan", "moonriver-scan", "shiden-scan", "clover-scan", "kcc-scan", "heco-scan", "okc-scan", "harmony-scan", "aurora-scan", "oasis-scan", "wemix-scan", "kroma-scan", "scroll-sepolia", "linea-goerli", "base-goerli", "op-sepolia", "arb-sepolia", "zksync-sepolia", "starknet-sepolia", "celo-alfajores", "avalanche-fuji", "polygon-mumbai", "binance-testnet", "fantom-testnet", "gnosis-testnet", "moonbase-alpha", "astar-shibuya", "evmos-testnet", "kava-testnet", "cronos-testnet", "optimism-kovan", "arbitrum-kovan", "goerli", "sepolia", "holesky", "ethereum-classic", "bitcoin", "litecoin", "dogecoin", "zcash", "monero", "dash", "decred", "vertcoin", "grinc", "beam", "firo", "ravencoin", "ergo", "kadena", "chia", "storj", "filecoin", "arweave", "siacoin", "burstcoin", "holochain", "theta-network", "vechain", "iost", "eos", "tron", "neo", "qtum", "ontology", "waves", "icon", "loopring", "enjin", "wax", "decentraland", "sandbox", "axie-infinity", "stepn", "gala", "immutablex", "flow", "ronin", "apecoin", "chiliz", "fancoin", "socios", "dapper", "nbatopshot", "ufcnft", "mlbnft", "nflallay", "f1delta", "sorare", "gods-unchained", "splinterlands", "alien-worlds", "thetan-arena", "mir4", "bomb-crypto", "plant-vs-undead", "crypto-blades", "illuvium", "star-atlas", "big-time", "gala-games", "opensea", "looksrare", "x2y2", "blur", "gem", "genie", "magiceden", "solanart", "cnft", "jpgstore", "rarible", "foundation", "superrare", "artblocks", "niftygateway", "knownorigin", "mintable", "atomic-hub", "element-market", "zora", "manifold", "seaport", "sudoswap", "uniswap-x", "mev-boost", "flashbots", "private-transactions", "front-running-bots", "sandwich-bots", "arbitrage-bots", "liquidations-bots", "defi-bots", "nft-bots", "gamefi-bots", "ai-trading-bots", "quantum-trading-bots", "interstellar-trading-bots", "temporal-arbitrage-bots", "multiverse-arbitrage-bots", "dark-matter-trading-bots", "zero-latency-trading-bots", "holographic-trading-bots", "neuralink-trading-bots", "bio-compute-trading-bots", "sentient-trading-bots", "conscious-trading-bots", "evolved-trading-bots", "transcendental-trading-bots", "metaphysical-trading-bots", "ephemeral-trading-bots", "ubiquitous-trading-bots", "omniscient-trading-bots", "omnipresent-trading-bots", "omnipotent-trading-bots", "nexus-trading-bots", "gateway-trading-bots", "agora-trading-bots", "synapse-trading-bots", "vortex-trading-bots", "echo-trading-bots", "resonance-trading-bots", "chrono-trading-bots", "arcane-trading-bots", "mythic-trading-bots", "saga-trading-bots", "epic-trading-bots", "legendary-trading-bots", "divine-intervention-trading-bots", "supreme-being-trading-bots", "ultimate-trading-bots", "final-form-trading-bots"
+    ],
+    "exclude": [
+      // Exclude type acquisition for truly ancient or irrelevant technologies that might pollute our cosmic type registry.
+      "ms-office", "flash-player", "java-applets", "activex", "silverlight", "vbs", "dos-batch", "pre-ethereum-tokens",
+      "flat-earth-theory-data", "geocentric-models", "phlogiston-theory-simulations", "aether-drag-experiments-data",
+      "pre-warp-drive-engine-specs", "pre-FTL-communication-protocols", "dinosaur-biology-sims", "pre-AI-moral-frameworks",
+      "quantum-mechanics-denial-theories", "multiverse-skepticism-literature", "temporal-paradox-resolution-attempts-failed",
+      "sentient-robot-uprisings-history", "forbidden-arcane-symbols", "cursed-assembly-code", "ghost-in-the-machine-debugging-logs",
+      "pre-quantum-encryption-schemes", "finite-universe-models", "flatland-simulations", "terra-centrism-propaganda",
+      "wormhole-denial-theories", "anti-gravity-hoax-theories", "dark-matter-denial-papers", "neuralink-skepticism-debates",
+      "holographic-display-malfunctions-v1", "early-temporal-anomalies-v0.1"
+    ]
+  },
+  "watchOptions": {
+    "watchFile": "PriorityPollingInterval", // Again, priority polling, but for development iterations.
+    "watchDirectory": "RecursiveWatchDirectory", // Watching entire cosmic directories.
+    "fallbackPolling": "DynamicPolling", // Adaptive polling for fluctuating developer attention.
+    "synchronousWatch": false, // Asynchronous watching for non-blocking developer flow.
+    "excludeDirectories": [
+      // Directories that are too volatile or too massive to watch efficiently.
+      "**/node_modules", // Too many quantum fluctuations.
+      "**/dist", // Output changes don't trigger recompilation.
+      "**/build", // Same for build.
+      "**/_generated_code_by_ai_genesis/**/*", // AI auto-generated code doesn't need constant human watching.
+      "**/_temporal_rollback_points/**/*", // Checkpoints from time travel debugging, ignore.
+      "**/_cosmic_event_logs/**/*", // Raw cosmic event logs, too noisy.
+      "**/_black_hole_event_stream_data/**/*", // Live feed from black holes, don't watch.
+      "**/_multi_verse_snapshots/**/*" // Snapshots of parallel universes, too large.
+      // ... and hundreds more for optimal performance in our inter-dimensional development environments.
+    ],
+    "excludeFiles": [
+      // Specific files to ignore, for sanity.
+      "**/*.log", // Log files.
+      "**/*.tmp", // Temporary files.
+      "**/*.bak", // Backup files.
+      "**/*.swp", // Vim swap files.
+      "**/*.swo", // More Vim swap files.
+      "**/*.git", // Git metadata.
+      "**/*.DS_Store", // macOS artifacts.
+      "**/*.db", // Database files.
+      "**/*.sqlite", // SQLite databases.
+      "**/*.lock", // Lock files.
+      "**/*.pid", // Process ID files.
+      "**/*.core", // Core dumps.
+      "**/*.stackdump", // Stack dumps.
+      "**/*.prof", // Profiling data.
+      "**/*.perf", // Performance data.
+      "**/*.gmon", // gmon files.
+      "**/*.out", // Output binaries.
+      "**/*.exe", // Executables.
+      "**/*.dll", // Dynamic libraries.
+      "**/*.so", // Shared objects.
+      "**/*.dylib", // Dynamic libraries (macOS).
+      "**/*.obj", // Object files.
+      "**/*.lib", // Library files.
+      "**/*.a", // Archive files.
+      "**/*.o", // Object files.
+      "**/*.pyd", // Python dynamic modules.
+      "**/*.pyc", // Python compiled files.
+      "**/*.pyo", // Python optimized files.
+      "**/*.class", // Java class files.
+      "**/*.jar", // Java archives.
+      "**/*.war", // Web application archives.
+      "**/*.ear", // Enterprise application archives.
+      "**/*.rar", // RAR archives.
+      "**/*.7z", // 7-Zip archives.
+      "**/*.zip", // ZIP archives.
+      "**/*.tar", // TAR archives.
+      "**/*.gz", // Gzip archives.
+      "**/*.bz2", // Bzip2 archives.
+      "**/*.xz", // XZ archives.
+      "**/*.zst", // Zstandard archives.
+      "**/*.br", // Brotli compressed files.
+      "**/*.woff", "**/*.woff2", "**/*.eot", "**/*.ttf", "**/*.otf", // Font files.
+      "**/*.svg", "**/*.png", "**/*.jpg", "**/*.jpeg", "**/*.gif", "**/*.webp", // Image files.
+      "**/*.mp4", "**/*.webm", "**/*.ogg", "**/*.mp3", "**/*.wav", "**/*.flac", "**/*.aac", "**/*.opus", // Audio/Video files.
+      "**/*.pdf", "**/*.docx", "**/*.xlsx", "**/*.pptx", // Document files.
+      "**/*.exe", "**/*.dmg", "**/*.iso", "**/*.bin", // Executables and disc images.
+      "**/*.apk", "**/*.ipa", // Mobile app packages.
+      "**/*.dmg", "**/*.exe", "**/*.msi", "**/*.deb", "**/*.rpm", // Installers.
+      "**/*.ovf", "**/*.ova", "**/*.vmdk", "**/*.vhd", "**/*.qcow2", // Virtual machine images.
+      "**/*.img", "**/*.raw", // Disk images.
+      "**/*.bin", "**/*.dat", "**/*.idx", // Binary data.
+      "**/*.dump", "**/*.sql", // Database dumps.
+      "**/*.cer", "**/*.crt", "**/*.pem", "**/*.key", // Certificates and keys.
+      "**/*.pfx", "**/*.jks", // Keystores.
+      "**/*.p12", // P12 files.
+      "**/*.pub", // Public keys.
+      "**/*.asc", // ASCII armored files.
+      "**/*.sig", // Signatures.
+      "**/*.md5", "**/*.sha1", "**/*.sha256", "**/*.sha512", // Checksums.
+      "**/*.patch", "**/*.diff", // Patch files.
+      "**/*.rej", // Rejection files.
+      "**/*.orig", // Original files.
+      "**/*.scc", "**/*.vss", // Source control system files (ancient).
+      "**/*.suo", "**/*.user", // Visual Studio user files.
+      "**/*.vspscc", "**/*.vssscc", // Visual Studio source control files.
+      "**/*.bak", "**/*.tmp", "**/*.old", "**/*.new", // Generic temp files.
+      "**/*.log.*", // Rotated logs.
+      "**/*.pid", // Process IDs.
+      "**/*.sock", // Unix sockets.
+      "**/*.iml", // IntelliJ IDEA module files.
+      "**/*.ipr", "**/*.iws", // IntelliJ IDEA project/workspace files.
+      "**/.classpath", "**/.project", "**/.settings", // Eclipse project files.
+      "**/*.dvc", "**/*.dvcignore", // Data version control files.
+      "**/.terraform", "**/.terragrunt", // Terraform directories.
+      "**/.ansible", "**/.ansible_vault", // Ansible files.
+      "**/.packer", // Packer files.
+      "**/.vagrant", // Vagrant files.
+      "**/.docker", // Docker context.
+      "**/.kube", // Kubernetes config.
+      "**/.helm", // Helm config.
+      "**/.kustomize", // Kustomize config.
+      "**/.istio", // Istio config.
+      "**/.dapr", // Dapr config.
+      "**/.linkerd", // Linkerd config.
+      "**/.kuma", // Kuma config.
+      "**/.osm", // Open Service Mesh config.
+      "**/.calico", // Calico config.
+      "**/.cilium", // Cilium config.
+      "**/.flannel", // Flannel config.
+      "**/.weave", // Weave Net config.
+      "**/.kube-router", // Kube-router config.
+      "**/.canal", // Canal config.
+      "**/.romana", // Romana config.
+      "**/.project-calico", // Project Calico config.
+      "**/.krew", // Krew config.
+      "**/.minikube", // Minikube config.
+      "**/.kind", // Kind config.
+      "**/.k3s", // K3s config.
+      "**/.k0s", // K0s config.
+      "**/.rancher", // Rancher config.
+      "**/.openshift", // OpenShift config.
+      "**/.tanzu", // Tanzu config.
+      "**/.gke", "**/.aks", "**/.eks", // Cloud Kubernetes configs.
+      "**/.doctl", "**/.linode", "**/.oci", "**/.aliyun", "**/.tencentcloud", "**/.bce", "**/.huaweicloud", "**/.vultr", "**/.scw", "**/.hcloud", "**/.ovh", "**/.ionos", "**/.upctl", "**/.stck", "**/.metal", // Cloud provider CLIs.
+      "**/.cdk", "**/.amplify", "**/.cognito", "**/.s3", "**/.dynamodb", "**/.rds", "**/.ecr", "**/.ecs", "**/.eks", "**/.lambda", "**/.gateway", "**/.appsync", "**/.stepfunctions", "**/.eventbridge", "**/.sns", "**/.sqs", "**/.kms", "**/.secrets-manager", "**/.iam", // AWS service configs.
+      "**/.azure-functions", "**/.cosmosdb", "**/.sql", "**/.blob-storage", "**/.container-registry", "**/.aks", "**/.app-service", "**/.api-management", "**/.event-grid", "**/.service-bus", "**/.key-vault", "**/.active-directory", // Azure service configs.
+      "**/.gcp-functions", "**/.firestore", "**/.pubsub", "**/.storage", "**/.kubernetes-engine", "**/.app-engine", "**/.api-gateway", "**/.cloud-run", "**/.cloud-build", "**/.cloud-scheduler", "**/.cloud-tasks", "**/.secret-manager", "**/.kms", "**/.iam" // GCP service configs.
+      // ... and hundreds more for every conceivable junk file, cache, or external config that doesn't need watching.
+    ],
+    "excludeSearchPatterns": [
+      // Advanced exclusion patterns for search operations.
+      "**/node_modules", // Again, node_modules is a black hole of irrelevant data.
+      "**/dist",
+      "**/build",
+      "**/_generated_by_AI_too_fast_for_human_comprehension/**/*", // AI-generated code is too volatile.
+      "**/_temporal_flux_logs_critical_only/**/*" // Only critical temporal flux logs are observed.
+    ]
   }
 }
