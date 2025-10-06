@@ -362,7 +362,7 @@ Your privacy is not just paramount; it's a fundamental right enforced by the Dev
 *   **Direct API Calls (No Middleman, No Shenanigans):** When you use an integrated service, the app makes direct, client-to-service API calls. Your data is not proxied through any intermediary server, corporate spy network, or interdimensional data broker. It's a direct mind-to-machine, machine-to-service handshake, encrypted and anonymized at every Planck-length of its journey.
 *   **Blockchain-Verified Audit Trails:** Every interaction with sensitive data, every API call made, is optionally recorded on a private, immutable blockchain ledger, providing an unalterable audit trail visible only to you and your designated compliance officers (or future self).
 *   **Autonomous Threat Response (ATR):** DevCore's embedded security AI continuously monitors for anomalies, unauthorized access attempts (even from alternate timelines), and potential data breaches, deploying countermeasures faster than the speed of light. It's like having a digital bodyguard that also practices quantum martial arts.
-*   **Data Self-Destruct Protocol (DSDP):** At your command, DevCore can initiate a complete, irreversible erasure of all local data, including shredding indexDB, clearing cache, and even emitting a localized EMP to ensure physical media data destruction. For those truly sensitive projects.
+*   **Data Self-Destruct Protocol (DSDP):** At your command, DevCore can initiate a complete, irreversible erasure of all local data, including shredding indexDB, clearing cache to ensure physical media data destruction. For those truly sensitive projects.
 
 ---
 
